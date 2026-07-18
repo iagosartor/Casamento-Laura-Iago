@@ -230,6 +230,23 @@ nav.tabs button.active{background:var(--glass-strong);color:var(--text);box-shad
 .saved-toast{position:fixed;bottom:14px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(13,154,96,.95);color:#fff;font-size:12.5px;font-weight:600;padding:7px 17px;border-radius:99px;box-shadow:0 8px 24px rgba(13,154,96,.35);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:100}
 .saved-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
+/* BORRAR VALORES */
+body.blur-money .stat3 .sv span:not(.pfx),
+body.blur-money .stat3 .sv input,
+body.blur-money .cline .cv,
+body.blur-money .g-main-total,
+body.blur-money .g-sub-val,
+body.blur-money .num,
+body.blur-money .cell .v,
+body.blur-money .pa,
+body.blur-money .fmtBRL,
+body.blur-money .pay-item .pa{
+  filter:blur(7px);
+  user-select:none;
+  transition:filter .2s;
+}
+body.blur-money .stat3 .sv input{pointer-events:none}
+
 /* DASHBOARD NOVO */
 .dash-hero{text-align:center;padding:24px 20px 20px;margin-bottom:14px;background:linear-gradient(135deg,rgba(20,48,100,.55),rgba(60,100,180,.35));border-radius:var(--R)}
 .dash-cd-val{font-family:var(--fs);font-size:clamp(34px,7vw,58px);font-weight:700;color:var(--tw);line-height:1.15;text-shadow:0 2px 24px rgba(10,20,50,.5);letter-spacing:-0.5px}
@@ -251,14 +268,14 @@ nav.tabs button.active{background:var(--glass-strong);color:var(--text);box-shad
 .dash-cl-prog .prog-bar{height:7px;border-radius:99px}
 
 /* INDICADOR CONVIDADOS REDESENHADO */
-.g-main-card{padding:22px 20px 16px;text-align:center;margin-bottom:12px}
-.g-main-total{font-family:var(--fs);font-size:clamp(48px,10vw,80px);font-weight:700;color:var(--tw);line-height:1;text-shadow:0 2px 20px rgba(10,20,50,.4)}
+.g-main-card{padding:20px 20px 14px;text-align:center;margin-bottom:12px}
+.g-main-total{font-family:var(--fs);font-size:clamp(52px,10vw,84px);font-weight:700;color:var(--gold);line-height:1;text-shadow:0 2px 24px rgba(245,201,106,.3)}
 .g-main-conf{font-size:13px;color:var(--twd);margin-top:4px}
 .g-main-conf span{font-weight:700;color:#5eead4}
-.g-sub-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-.g-sub-item{padding:8px 10px;text-align:center;border-radius:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
-.g-sub-val{font-family:var(--fs);font-size:22px;font-weight:700}
-.g-sub-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--twd);font-weight:600;margin-top:2px}
+.g-sub-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:14px}
+.g-sub-item{padding:7px 16px;text-align:center;border-radius:99px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;gap:7px}
+.g-sub-val{font-family:var(--fs);font-size:18px;font-weight:700}
+.g-sub-lbl{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--twd);font-weight:600}
 .g-reserva-pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:99px;background:rgba(192,112,32,.18);color:var(--warn);margin-top:10px}
 .g-search{width:100%;font-family:var(--f);font-size:13px;background:rgba(255,255,255,.18);border:1px solid var(--glass-border);border-radius:10px;padding:8px 12px 8px 34px;color:var(--text);outline:none;transition:background .14s,border-color .14s}
 .g-search:focus{background:rgba(255,255,255,.28);border-color:rgba(180,220,255,.8)}
@@ -848,10 +865,10 @@ function renderConvidados(){
   h+='<div style="font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--dim);font-weight:700;margin-bottom:6px">Total de convidados</div>';
   h+='<div class="g-main-total">'+conv.length+'<span style="font-size:.3em;font-weight:500;opacity:.65;margin-left:8px">('+conf.length+' confirmados)</span></div>';
   h+='<div class="g-sub-row">';
-  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--ok)">'+certeza.length+'</div><div class="g-sub-lbl">Certeza</div></div>';
-  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--ok)">'+alta.length+'</div><div class="g-sub-lbl">Alta</div></div>';
-  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--twd)">'+media.length+'</div><div class="g-sub-lbl">Média</div></div>';
-  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--faint)">'+baixa.length+'</div><div class="g-sub-lbl">Baixa</div></div>';
+  h+='<div class="g-sub-item"><span class="g-sub-val" style="color:var(--ok)">'+certeza.length+'</span><span class="g-sub-lbl">Certeza</span></div>';
+  h+='<div class="g-sub-item"><span class="g-sub-val" style="color:var(--ok)">'+alta.length+'</span><span class="g-sub-lbl">Alta</span></div>';
+  h+='<div class="g-sub-item"><span class="g-sub-val" style="color:var(--twd)">'+media.length+'</span><span class="g-sub-lbl">Média</span></div>';
+  h+='<div class="g-sub-item"><span class="g-sub-val" style="color:var(--faint)">'+baixa.length+'</span><span class="g-sub-lbl">Baixa</span></div>';
   h+='</div>';
   h+='<div><span class="g-reserva-pill">Lista Reserva: '+res.length+' pessoas</span></div>';
   h+='</div>';

@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Casamento Laura & Iago — Lago di Garda 2028</title>
+<style>
+:root{
+  --glass-bg:rgba(255,255,255,0.28);--glass-strong:rgba(255,255,255,0.44);
+  --glass-border:rgba(255,255,255,0.58);--shadow:0 6px 20px rgba(20,40,80,0.18);
+  --text:#1a2a4a;--dim:rgba(26,42,74,.68);--faint:rgba(26,42,74,.42);
+  --tw:#f0f6ff;--twd:rgba(240,246,255,.82);--twf:rgba(240,246,255,.55);
+  --noivo:#2060c8;--noivo-bg:rgba(32,96,200,0.16);
+  --noiva:#c05080;--noiva-bg:rgba(192,80,128,0.16);
+  --gold:#f5c96a;--eur:#4a90d9;
+  --caixa:#0d7a6a;--caixa-bg:rgba(13,122,106,0.14);
+  --ok:#0d9a60;--danger:#d44060;--warn:#c07020;
+  --R:18px;
+  --f:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  --fs:-apple-system,BlinkMacSystemFont,Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%}
+body{font-family:var(--f);color:var(--text);background:linear-gradient(145deg,#1a3a6a 0%,#2e5fa0 28%,#4a90c8 55%,#6ab4d8 75%,#a8d8c0 100%) fixed;min-height:100vh;-webkit-font-smoothing:antialiased}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.38;z-index:0;pointer-events:none}
+.blob.b1{width:440px;height:440px;background:#7ab8e8;top:-140px;left:-100px}
+.blob.b2{width:380px;height:380px;background:#c8a0d8;bottom:-120px;right:-80px}
+.blob.b3{width:300px;height:300px;background:#f0e080;top:40%;right:8%}
+.blob.b4{width:260px;height:260px;background:#80d8b8;bottom:20%;left:6%}
+.app{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:14px 14px 40px}
+.glass{background:var(--glass-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--glass-border);box-shadow:var(--shadow);border-radius:var(--R)}
+
+/* HERO */
+header.hero{text-align:center;padding:10px 0 5px}
+.hero h1{font-family:var(--fs);font-weight:700;font-size:clamp(24px,5vw,44px);color:var(--tw);text-shadow:0 2px 20px rgba(10,20,50,.5)}
+.hero h1 .amp{color:var(--gold);font-style:italic;padding:0 8px}
+.hero .sub{color:var(--twd);font-size:13px;margin-top:4px}
+
+/* TOPBAR */
+.topbar{display:flex;align-items:center;gap:8px;margin:11px 0;flex-wrap:wrap}
+nav.tabs{display:flex;gap:3px;padding:4px;overflow-x:auto;flex-shrink:0}
+nav.tabs button{font-family:var(--f);font-size:12px;font-weight:600;color:var(--dim);background:transparent;border:none;padding:6px 11px;border-radius:999px;cursor:pointer;white-space:nowrap}
+nav.tabs button.active{background:var(--glass-strong);color:var(--text);box-shadow:inset 0 0 0 1px var(--glass-border)}
+.filters{display:flex;flex-wrap:wrap;gap:4px;padding:4px}
+.filters button{font-size:11.5px;font-weight:600;color:var(--dim);background:transparent;border:none;padding:5px 9px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.filters button.active{background:var(--glass-strong);color:var(--text);box-shadow:inset 0 0 0 1px var(--glass-border)}
+.btn{font-family:var(--f);font-weight:600;font-size:13px;cursor:pointer;border:1px solid var(--glass-border);border-radius:12px;padding:8px 15px;color:var(--text);background:var(--glass-strong);display:inline-flex;align-items:center;gap:6px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.32)}
+.btn.primary{background:linear-gradient(135deg,#3a7fd8,#6ab4e8);border-color:transparent;color:#fff}
+.btn.danger{color:var(--danger);border-color:rgba(212,64,96,.4);background:rgba(212,64,96,.10)}
+.btn.sm{padding:6px 11px;font-size:12px}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.stat{padding:14px 16px;min-width:0}
+.stat .sl{font-size:10px;color:var(--dim);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.stat .sv{font-family:var(--fs);font-weight:700;font-size:clamp(14px,2.8vw,22px);font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:4px;flex-wrap:nowrap}
+.stat .sv .pfx{font-size:11px;font-weight:600;opacity:.75;white-space:nowrap;flex-shrink:0}
+.stat .sv input{background:transparent;border:none;border-bottom:1.5px dashed rgba(192,112,32,.5);outline:none;font-family:var(--fs);font-size:clamp(14px,2.8vw,22px);font-weight:700;color:inherit;min-width:60px;width:100%;font-variant-numeric:tabular-nums}
+.stat.s-caixa .sv input{border-bottom-color:rgba(13,122,106,.5)}
+.stat .ss{font-size:10.5px;color:var(--faint);margin-top:4px}
+.sv.green{color:var(--ok)}.sv.amber{color:var(--warn)}.sv.teal{color:var(--caixa)}.sv.blue{color:var(--noivo)}
+
+/* EUR BAR */
+.eur-bar{background:rgba(74,144,217,.12);border:1px solid rgba(74,144,217,.38);border-radius:12px;padding:7px 15px;font-size:12px;color:var(--text);display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:11px}
+.eur-bar input{background:rgba(255,255,255,.55);border:1px solid rgba(74,144,217,.5);border-radius:7px;padding:3px 7px;font-size:12.5px;font-weight:700;color:var(--eur);width:72px;outline:none;font-family:var(--f)}
+
+/* PANELS */
+.dash-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.panel{padding:15px}
+.panel h2{font-family:var(--fs);font-weight:600;font-size:18px;margin-bottom:2px}
+.panel .psub{color:var(--dim);font-size:11.5px;margin-bottom:11px}
+.cline{display:flex;justify-content:space-between;align-items:center;padding:7px 2px;border-bottom:1px solid rgba(255,255,255,.14);font-size:13px}
+.cline:last-child{border-bottom:none}
+.cline .cv{font-weight:600;font-variant-numeric:tabular-nums}
+.cline .cv.green{color:var(--ok)}
+
+/* CONTRATAÇÕES + CHECKLIST FUNDIDOS */
+.cc-wrap{display:flex;flex-direction:column;gap:10px}
+.cc-header{display:flex;align-items:center;gap:8px;padding:12px 14px;flex-wrap:wrap}
+.cc-tabs{display:flex;gap:3px}
+.cc-tab{font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px;border:none;background:transparent;color:var(--dim);cursor:pointer;transition:background .15s}
+.cc-tab.active{background:var(--glass-strong);color:var(--text);box-shadow:inset 0 0 0 1px var(--glass-border)}
+/* Tabela contratações */
+.tbl{overflow:hidden}
+.th,.tr{display:grid;grid-template-columns:2fr 1.4fr 0.5fr 1fr 1fr 1fr 90px;gap:7px;align-items:center;padding:10px 14px}
+.th{font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint);font-weight:700;border-bottom:1px solid rgba(255,255,255,.18)}
+.th>div{cursor:pointer;user-select:none}
+.th>div.sorted{color:var(--gold)}
+.tr{border-bottom:1px solid rgba(255,255,255,.12);cursor:pointer;font-size:13px;transition:background .13s}
+.tr:last-child{border-bottom:none}
+.tr:hover{background:rgba(255,255,255,.13)}
+.tr .in{font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:6px}
+.tr .su{color:var(--dim);font-size:12px}
+.num{font-variant-numeric:tabular-nums;font-weight:600;font-size:13px}
+.num.ok{color:var(--ok)}.num.warn{color:var(--warn)}.num.z{color:var(--faint);font-weight:400}
+.num .esub{display:block;font-size:9.5px;color:var(--eur)}
+.mp{height:4px;border-radius:99px;background:rgba(26,42,74,.14);overflow:hidden;margin-top:3px}
+.mp>span{display:block;height:100%;background:linear-gradient(90deg,#0d9a60,#2e80d0)}
+.badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;display:inline-block;white-space:nowrap}
+.badge.c{background:rgba(13,154,96,.18);color:var(--ok)}
+.badge.p{background:rgba(192,112,32,.16);color:var(--warn)}
+.badge.q{background:rgba(32,96,200,.18);color:var(--noivo)}
+/* Checklist dentro do CC */
+.cl-sec{margin-bottom:10px;overflow:hidden}
+.cl-sec-h{font-family:var(--fs);font-weight:600;font-size:16px;padding:12px 14px 9px;border-bottom:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:space-between}
+.cl-sec-h .cnt{font-size:11.5px;font-weight:600;color:var(--dim);font-family:var(--f)}
+.cl-item{display:flex;align-items:center;gap:11px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.10);cursor:pointer;font-size:13px;transition:background .13s}
+.cl-item:last-child{border-bottom:none}
+.cl-item:hover{background:rgba(255,255,255,.11)}
+.cl-chk{width:19px;height:19px;border-radius:50%;border:2px solid rgba(26,42,74,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;font-weight:700;transition:background .14s}
+.cl-item.done .cl-chk{background:var(--ok);border-color:var(--ok);color:#fff}
+.cl-item.done .cl-lbl{text-decoration:line-through;color:var(--faint)}
+.cl-lbl{flex:1}
+.pri{font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:99px}
+.pri.alta{background:rgba(212,64,96,.16);color:var(--danger)}
+.pri.media{background:rgba(192,112,32,.14);color:var(--warn)}
+.pri.baixa{background:rgba(96,96,160,.14);color:#6060a0}
+.cl-fornec{font-size:11px;color:var(--dim);flex:0.8}
+.cl-add{padding:11px 14px;border-top:1px solid rgba(255,255,255,.16);display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.cl-add input,.cl-add select{font-family:var(--f);font-size:12.5px;background:rgba(255,255,255,.18);border:1px solid var(--glass-border);border-radius:9px;padding:7px 10px;color:var(--text);outline:none}
+.cl-add input{flex:1;min-width:140px}
+.cl-add input::placeholder{color:var(--faint)}
+.cl-add select option{background:#1a3a6a;color:#f0f6ff}
+.prog-bar{height:5px;border-radius:99px;background:rgba(26,42,74,.14);overflow:hidden}
+.prog-bar>span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#0d9a60,#2e80d0);transition:width .4s}
+
+/* CONVIDADOS */
+.g-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:10px}
+.g-stat{padding:12px 10px;text-align:center}
+.g-stat .gv{font-family:var(--fs);font-size:22px;font-weight:700;margin-top:3px}
+.g-stat .gl{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim);font-weight:700}
+.g-head,.g-row{display:grid;grid-template-columns:0.4fr 2fr 1.4fr 1fr 1fr 80px;gap:7px;align-items:center;padding:9px 14px}
+.g-head{font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint);font-weight:700;border-bottom:1px solid rgba(255,255,255,.18)}
+.g-row{border-bottom:1px solid rgba(255,255,255,.11);cursor:pointer;font-size:13px;transition:background .13s}
+.g-row:last-child{border-bottom:none}
+.g-row:hover{background:rgba(255,255,255,.13)}
+.g-row .gn{font-weight:600}
+.g-row .gc{color:var(--dim);font-size:11.5px}
+.gst{font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;display:inline-block;white-space:nowrap}
+.gst.confirmado{background:rgba(13,154,96,.18);color:var(--ok)}
+.gst.pendente{background:rgba(32,96,200,.16);color:var(--noivo)}
+.gst.nao-vai{background:rgba(180,180,180,.2);color:var(--faint)}
+.gst.reserva-t{background:rgba(192,112,32,.16);color:var(--warn)}
+.g-num{font-size:12px;font-weight:600;color:var(--dim)}
+.g-add{padding:11px 14px;border-top:1px solid rgba(255,255,255,.16);display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.g-add input,.g-add select{font-family:var(--f);font-size:12.5px;background:rgba(255,255,255,.18);border:1px solid var(--glass-border);border-radius:9px;padding:7px 10px;color:var(--text);outline:none}
+.g-add input{flex:1;min-width:140px}
+.g-add input::placeholder{color:var(--faint)}
+.g-add select option{background:#1a3a6a;color:#f0f6ff}
+
+/* O GRANDE DIA */
+.gd-hero{text-align:center;padding:24px 20px 18px;background:linear-gradient(135deg,rgba(20,48,100,.6),rgba(100,60,140,.45));border-radius:var(--R);margin-bottom:12px}
+.gd-hero h2{font-family:var(--fs);font-size:clamp(20px,5vw,34px);font-weight:700;color:#fff;text-shadow:0 2px 16px rgba(10,20,50,.5);margin-bottom:4px}
+.gd-hero .ghs{color:var(--twd);font-size:13px}
+.gd-hero .ghd{color:var(--gold);font-size:16px;font-weight:700;margin-top:6px;font-family:var(--fs)}
+.gd-tabs{display:flex;gap:4px;padding:4px;margin-bottom:10px}
+.gd-tab{font-size:12.5px;font-weight:600;padding:6px 13px;border-radius:999px;border:none;background:transparent;color:var(--dim);cursor:pointer}
+.gd-tab.active{background:var(--glass-strong);color:var(--text);box-shadow:inset 0 0 0 1px var(--glass-border)}
+.tl-item{display:flex;gap:13px;padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.12);align-items:flex-start;transition:background .13s}
+.tl-item:last-child{border-bottom:none}
+.tl-item:hover{background:rgba(255,255,255,.07)}
+.tl-time{font-family:var(--fs);font-weight:700;font-size:15px;color:var(--gold);min-width:62px;flex-shrink:0;padding-top:2px}
+.tl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.tl-dot.gold{background:var(--gold);box-shadow:0 0 0 3px rgba(245,201,106,.2)}
+.tl-dot.rose{background:#f472b6;box-shadow:0 0 0 3px rgba(244,114,182,.2)}
+.tl-dot.teal{background:#2dd4bf;box-shadow:0 0 0 3px rgba(45,212,191,.2)}
+.tl-dot.blue{background:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.2)}
+.tl-dot.violet{background:#a78bfa;box-shadow:0 0 0 3px rgba(167,139,250,.2)}
+.tl-tag.rose{background:rgba(244,114,182,.18);color:#f472b6}
+.tl-tag.teal{background:rgba(45,212,191,.18);color:#2dd4bf}
+.tl-tag.blue{background:rgba(96,165,250,.18);color:#60a5fa}
+.tl-tag.violet{background:rgba(167,139,250,.18);color:#a78bfa}
+.tl-time.rose{color:#f9a8d4}
+.tl-time.teal{color:#5eead4}
+.tl-time.blue{color:#93c5fd}
+.tl-body{flex:1}
+.tl-title{font-weight:700;font-size:14px;color:#f0f6ff;margin-bottom:2px}
+.tl-desc{font-size:12px;color:rgba(240,246,255,.7);line-height:1.5}
+.tl-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}
+.tl-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;background:rgba(255,255,255,.13);color:rgba(240,246,255,.85)}
+.tl-tag.alt{background:rgba(167,139,250,.2);color:#c4b5fd}
+.notes-panel{padding:14px}
+.notes-panel h3{font-family:var(--fs);font-size:16px;font-weight:600;margin-bottom:9px}
+.notes-area{width:100%;font-family:var(--f);font-size:13px;background:rgba(255,255,255,.18);border:1px solid var(--glass-border);border-radius:11px;padding:10px 12px;color:var(--text);outline:none;resize:vertical;min-height:80px}
+.notes-area:focus{border-color:rgba(180,220,255,.9);background:rgba(255,255,255,.26)}
+.notes-area::placeholder{color:var(--faint)}
+
+/* MODAL */
+.overlay{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(10,20,50,.55);backdrop-filter:blur(4px);opacity:0;pointer-events:none;visibility:hidden;transition:opacity .15s,visibility .15s}
+.overlay.open{opacity:1;pointer-events:auto;visibility:visible}
+.modal{width:100%;max-width:540px;max-height:88vh;overflow-y:auto;padding:22px;background:rgba(20,48,100,.92);backdrop-filter:blur(18px);border:1px solid var(--glass-border);border-radius:20px;box-shadow:0 20px 60px rgba(10,20,60,.5)}
+.mh{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:4px}
+.mh h3{font-family:var(--fs);font-weight:700;font-size:21px;color:var(--tw)}
+.mh .x{background:rgba(255,255,255,.13);border:none;color:var(--tw);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.mh .x:hover{background:rgba(255,255,255,.24)}
+.msub{font-size:11.5px;color:var(--twd);margin-bottom:9px}
+.msum{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:11px 0}
+.msum .cell{padding:10px;border-radius:11px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);text-align:center}
+.cell .l{font-size:9.5px;color:var(--twd);text-transform:uppercase;letter-spacing:.5px;font-weight:700}
+.cell .v{font-family:var(--fs);font-size:17px;font-weight:700;margin-top:3px;color:var(--tw)}
+.cell .v.ok{color:#5eead4}.cell .v.warn{color:var(--gold)}
+.stitle{font-size:10.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--twd);font-weight:700;margin:13px 0 8px}
+.field{margin-bottom:10px}
+.field label{display:block;font-size:11px;color:var(--twd);font-weight:600;margin-bottom:4px}
+.field input,.field select,.field textarea{width:100%;font-family:var(--f);font-size:13.5px;color:var(--tw);background:rgba(255,255,255,.11);border:1px solid var(--glass-border);border-radius:9px;padding:8px 11px;outline:none}
+.field input::placeholder,.field textarea::placeholder{color:var(--twf)}
+.field select option{background:#1a3a6a;color:#f0f6ff}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.toggle{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px}
+.toggle button{font-family:var(--f);font-size:12.5px;font-weight:600;cursor:pointer;padding:8px;border-radius:9px;border:1px solid var(--glass-border);background:rgba(255,255,255,.07);color:var(--twd);transition:background .13s}
+.toggle button.sn{background:var(--noivo-bg);color:#90c0ff;border-color:rgba(32,96,200,.5)}
+.toggle button.sl{background:var(--noiva-bg);color:#f0a0c0;border-color:rgba(192,80,128,.5)}
+.toggle button.sc{background:var(--caixa-bg);color:#5eead4;border-color:rgba(13,122,106,.5)}
+.pay-list{display:flex;flex-direction:column;gap:5px;margin-bottom:4px}
+.pay-item{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13)}
+.pay-item .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.dot.dn{background:#5090e0}.dot.dl{background:#e070a0}.dot.dc{background:#5eead4}
+.pay-item .pi{flex:1;min-width:0}
+.pay-item .pa{font-weight:700;font-size:13.5px;color:var(--tw)}
+.pay-item .pw{font-size:10px;font-weight:700;padding:2px 6px;border-radius:99px;margin-left:4px}
+.pw.dn{background:var(--noivo-bg);color:#90c0ff}.pw.dl{background:var(--noiva-bg);color:#f0a0c0}.pw.dc{background:var(--caixa-bg);color:#5eead4}
+.pay-item .pm{font-size:11px;color:var(--twf);margin-top:1px}
+.pay-item .del{background:transparent;border:none;color:var(--twf);cursor:pointer;font-size:16px;padding:2px 5px;border-radius:5px;line-height:1}
+.pay-item .del:hover{color:#f08080;background:rgba(220,80,80,.13)}
+.addp{padding:11px;border-radius:11px;background:rgba(255,255,255,.06);border:1px dashed var(--glass-border);margin-top:7px}
+.mact{display:flex;gap:7px;margin-top:14px}
+.mact .btn{flex:1;justify-content:center}
+.eur-note{font-size:10.5px;color:var(--eur);font-weight:600;margin-top:3px}
+.saved-toast{position:fixed;bottom:14px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(13,154,96,.95);color:#fff;font-size:12.5px;font-weight:600;padding:7px 17px;border-radius:99px;box-shadow:0 8px 24px rgba(13,154,96,.35);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:100}
+.saved-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* DASHBOARD NOVO */
+.dash-hero{text-align:center;padding:24px 20px 20px;margin-bottom:14px;background:linear-gradient(135deg,rgba(20,48,100,.55),rgba(60,100,180,.35));border-radius:var(--R)}
+.dash-cd-val{font-family:var(--fs);font-size:clamp(34px,7vw,58px);font-weight:700;color:var(--tw);line-height:1.15;text-shadow:0 2px 24px rgba(10,20,50,.5);letter-spacing:-0.5px}
+.dash-cd-val .unit{font-size:.38em;font-weight:500;opacity:.75;margin-left:2px;letter-spacing:0}
+.dash-cd-sub{font-size:12px;color:var(--twd);margin-top:7px;letter-spacing:.3px}
+.dash-cd-date{font-size:12px;color:var(--gold);font-weight:600;margin-top:4px;font-family:var(--fs)}
+.stats3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.stat3{padding:14px 16px 12px}
+.stat3 .sl{font-size:10px;color:var(--dim);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.stat3 .sv{display:flex;align-items:baseline;gap:4px;flex-wrap:nowrap}
+.stat3 .sv .pfx{font-size:11px;font-weight:600;opacity:.75;flex-shrink:0}
+.stat3 .sv input{background:transparent;border:none;border-bottom:1.5px dashed rgba(192,112,32,.5);outline:none;font-family:var(--fs);font-size:clamp(15px,2.8vw,22px);font-weight:700;color:inherit;min-width:50px;width:100%;font-variant-numeric:tabular-nums}
+.stat3.s-caixa .sv input{border-bottom-color:rgba(13,122,106,.5)}
+.stat3 .ss{font-size:10.5px;color:var(--faint);margin-top:4px}
+.dash-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:10px 4px 2px}
+.dash-cl-prog{flex:1;min-width:200px}
+.dash-cl-prog .pct{font-family:var(--fs);font-size:24px;font-weight:700;color:var(--ok)}
+.dash-cl-prog .plbl{font-size:11px;color:var(--dim);font-weight:600;margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px}
+.dash-cl-prog .prog-bar{height:7px;border-radius:99px}
+
+/* INDICADOR CONVIDADOS REDESENHADO */
+.g-main-card{padding:22px 20px 16px;text-align:center;margin-bottom:12px}
+.g-main-total{font-family:var(--fs);font-size:clamp(48px,10vw,80px);font-weight:700;color:var(--tw);line-height:1;text-shadow:0 2px 20px rgba(10,20,50,.4)}
+.g-main-conf{font-size:13px;color:var(--twd);margin-top:4px}
+.g-main-conf span{font-weight:700;color:#5eead4}
+.g-sub-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.g-sub-item{padding:8px 10px;text-align:center;border-radius:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
+.g-sub-val{font-family:var(--fs);font-size:22px;font-weight:700}
+.g-sub-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--twd);font-weight:600;margin-top:2px}
+.g-reserva-pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:99px;background:rgba(192,112,32,.18);color:var(--warn);margin-top:10px}
+.g-search{width:100%;font-family:var(--f);font-size:13px;background:rgba(255,255,255,.18);border:1px solid var(--glass-border);border-radius:10px;padding:8px 12px 8px 34px;color:var(--text);outline:none;transition:background .14s,border-color .14s}
+.g-search:focus{background:rgba(255,255,255,.28);border-color:rgba(180,220,255,.8)}
+.g-search::placeholder{color:var(--faint)}
+.g-search-wrap{position:relative;flex:1;min-width:180px}
+.g-search-wrap .icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:13px;opacity:.5;pointer-events:none}
+.g-flt-row{display:flex;gap:6px;flex-wrap:wrap;padding:8px 13px;border-bottom:1px solid rgba(255,255,255,.12);align-items:center}
+.g-flt-group{display:flex;gap:3px;flex-wrap:wrap;align-items:center}
+.g-flt-sep{width:1px;height:18px;background:rgba(255,255,255,.2);margin:0 3px;flex-shrink:0}
+.g-match-count{font-size:11px;color:var(--faint);margin-left:auto;white-space:nowrap}
+
+/* PLANO UNIFICADO */
+.pl-item{border-bottom:1px solid rgba(255,255,255,.10)}
+.pl-item:last-child{border-bottom:none}
+.pl-row{display:flex;align-items:center;gap:10px;padding:11px 14px;cursor:pointer;transition:background .13s}
+.pl-row:hover{background:rgba(255,255,255,.10)}
+.pl-chk{width:20px;height:20px;border-radius:50%;border:2px solid rgba(26,42,74,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;font-weight:700;transition:background .14s}
+.pl-item.done .pl-chk{background:var(--ok);border-color:var(--ok);color:#fff}
+.pl-item.done .pl-lbl{text-decoration:line-through;color:var(--faint)}
+.pl-lbl{flex:1;font-size:13px}
+.pl-meta{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.pl-contract{font-size:10.5px;padding:2px 8px;border-radius:99px;background:rgba(13,154,96,.16);color:var(--ok);font-weight:600;white-space:nowrap}
+.pl-contract.prev{background:rgba(192,112,32,.15);color:var(--warn)}
+.pl-expand{background:transparent;border:none;color:var(--faint);cursor:pointer;font-size:13px;padding:2px 5px;border-radius:5px;transition:color .13s}
+.pl-expand:hover{color:var(--text)}
+.pl-detail{display:none;padding:10px 14px 14px 44px;background:rgba(255,255,255,.06);border-top:1px solid rgba(255,255,255,.08)}
+.pl-detail.open{display:block}
+.pl-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.pl-detail-grid .fd{margin-bottom:0}
+.pl-detail-grid .fd label{display:block;font-size:10px;color:var(--dim);font-weight:600;margin-bottom:3px;text-transform:uppercase;letter-spacing:.4px}
+.pl-detail-grid .fd input,.pl-detail-grid .fd select{width:100%;font-family:var(--f);font-size:13px;background:rgba(255,255,255,.18);border:1px solid var(--glass-border);border-radius:8px;padding:7px 10px;color:var(--text);outline:none}
+.pl-detail-grid .fd select option{background:#1a3a6a;color:#f0f6ff}
+.pl-save-btn{font-family:var(--f);font-size:12px;font-weight:600;padding:6px 14px;border-radius:8px;border:1px solid var(--glass-border);background:var(--glass-strong);cursor:pointer;color:var(--text)}
+.pl-save-btn:hover{background:rgba(255,255,255,.3)}
+.empty{text-align:center;padding:28px 10px;color:var(--dim);font-size:13px}
+.empty .big{font-size:28px;margin-bottom:7px}
+@media(max-width:860px){.stats,.g-stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){
+  .th,.g-head{display:none}
+  .tr,.g-row{grid-template-columns:1fr 1fr;gap:5px 9px;padding:11px}
+  .tr .in,.g-row .gn{grid-column:1/-1}
+  .dash-cols,.frow{grid-template-columns:1fr}
+  .msum{grid-template-columns:1fr 1fr}
+  .g-stats{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+<div class="app">
+<header class="hero">
+  <div style="letter-spacing:5px;text-transform:uppercase;font-size:10px;color:rgba(240,246,255,.75);font-weight:600;margin-bottom:4px">Destination Wedding</div>
+  <h1>Você <span class="amp">&amp;</span> Laura</h1>
+  <div class="sub">&#x1F1EE;&#x1F1F9; Lago di Garda, Itália &mdash; 08 de abril de 2028</div>
+</header>
+<div class="topbar">
+  <nav class="tabs glass">
+    <button data-view="dashboard" class="active">📊 Dashboard</button>
+    <button data-view="cc">📋 Plano & Contratos</button>
+    <button data-view="convidados">👥 Convidados</button>
+    <button data-view="grandia">💍 O Grande Dia</button>
+  </nav>
+  <div class="filters glass" id="filtersBar" style="display:none">
+    <button data-filter="todos" class="active">Todos</button>
+    <button data-filter="italia">🇮🇹 Itália</button>
+    <button data-filter="brasil">🇧🇷 Brasil</button>
+    <button data-filter="contratado">Contratados</button>
+    <button data-filter="quitado">Quitados</button>
+    <button data-filter="previsto">Previstos</button>
+  </div>
+  <button class="btn sm" id="btnBlur">🙈 Borrar</button>
+  <button class="btn sm" id="btnExport">📤 Exportar</button>
+  <label class="btn sm" id="btnImportLabel" style="cursor:pointer">📥 Importar<input type="file" id="btnImport" accept=".json" style="display:none"></label>
+  <button class="btn primary sm" id="btnNew" style="display:none">+ Novo</button>
+</div>
+<div id="sec-dashboard" class="sec"></div>
+<div id="sec-cc" class="sec" style="display:none"></div>
+<div id="sec-convidados" class="sec" style="display:none"></div>
+<div id="sec-grandia" class="sec" style="display:none"></div>
+</div>
+<div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
+<div class="saved-toast" id="saved">Salvo ✓</div>
+
+<script>
+(function(){
+'use strict';
+var KEY='cws_garda_2028_v4';
+var WEDDING=new Date(2028,3,8);
+var eurRate=6.20;
+var state={contracts:[],caixa:{contributions:[]},checklist:[],guests:[],orcamentoMeta:0,grandiaNotas:'',preWedNotas:''};
+var curView='dashboard',curFlt='todos',gdTab='cerimonia',sortKey=null,sortDir=1,blurMoney=false,draftWho='Noivo',viewDirty=false,guestFlt='todos',plFlt='todos',expandedId=null,guestSearch='';
+
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
+function esc(s){return String(s??'').replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function pm(v){if(typeof v==='number')return v;if(!v)return 0;v=String(v).trim().replace(/\s/g,'').replace(/R\$/gi,'').replace(/€/g,'');if(v.indexOf(',')>-1)v=v.replace(/\./g,'').replace(',','.');else if(/^\d{1,3}(\.\d{3})+$/.test(v))v=v.replace(/\./g,'');var n=parseFloat(v);return isNaN(n)?0:n;}
+function todayISO(){var d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function fmtDate(iso){if(!iso)return '';var p=iso.split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:iso;}
+function fmtBRL(n){return new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2}).format(n||0);}
+function fmtEUR(n){return new Intl.NumberFormat('pt-BR',{style:'currency',currency:'EUR',minimumFractionDigits:0,maximumFractionDigits:0}).format(n||0);}
+function e2b(n){return n*eurRate;}
+function b2e(n){return n/eurRate;}
+function cBRL(c){return c.currency==='EUR'?e2b(c.total||0):(c.total||0);}
+function cEUR(c){return c.currency==='EUR'?(c.total||0):b2e(c.total||0);}
+function pBRL(p){return p.currency==='EUR'?e2b(p.amount||0):(p.amount||0);}
+function paidOf(c){return(c.payments||[]).reduce(function(s,p){return s+pBRL(p);},0);}
+function dueOf(c){return Math.max(0,cBRL(c)-paidOf(c));}
+function isQ(c){return cBRL(c)>0&&paidOf(c)>=cBRL(c)-0.01;}
+
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}showToast();}
+var _tt=null;
+function showToast(){var el=document.getElementById('saved');if(!el)return;el.classList.add('show');if(_tt)clearTimeout(_tt);_tt=setTimeout(function(){el.classList.remove('show');},1300);}
+function load(){try{var r=localStorage.getItem(KEY);if(r){state=JSON.parse(r);return true;}}catch(e){}return false;}
+function norm(){
+  if(!state.contracts)state.contracts=[];
+  if(!state.caixa||!Array.isArray(state.caixa.contributions))state.caixa={contributions:[]};
+  if(!state.checklist||!state.checklist.length)state.checklist=defCL();
+  if(!state.guests||!state.guests.length)state.guests=defGuests();
+  if(typeof state.orcamentoMeta!=='number')state.orcamentoMeta=0;
+  if(typeof state.grandiaNotas!=='string')state.grandiaNotas='';
+  if(typeof state.preWedNotas!=='string')state.preWedNotas='';
+  if(typeof state.notaQuinta!=='string')state.notaQuinta='';
+  if(typeof state.notaSabado!=='string')state.notaSabado='';
+  if(typeof state.notaManha!=='string')state.notaManha='';
+  state.contracts.forEach(function(c){if(!c.currency)c.currency='BRL';if(!c.origin)c.origin='brasil';if(!c.payments)c.payments=[];});
+  state.checklist.forEach(function(i){if(!('contractId' in i))i.contractId=null;if(!('fornecedor' in i))i.fornecedor='';if(i.valor!==undefined)delete i.valor;});
+  state.guests.forEach(function(g){if(g.prob==='certeza'&&g.status==='pendente')g.status='confirmado';});
+}
+
+function iIcon(name){
+  var n=(name||'').toLowerCase();
+  if(/foto/.test(n))return '📷';if(/v[ií]deo|film|cineg/.test(n))return '🎥';
+  if(/villa|castelo|venue|palaz|espa[çc]o/.test(n))return '🏰';
+  if(/catering|buffet|jantar/.test(n))return '🍽️';
+  if(/vinho|espumante|degust|bebida|bar/.test(n))return '🍷';
+  if(/barco|lancha/.test(n))return '⛵';if(/decora|flor/.test(n))return '🌸';
+  if(/vestido/.test(n))return '👰';if(/traje|terno|noivo/.test(n))return '🤵';
+  if(/make|cabelo|maquia|penteado/.test(n))return '💄';if(/bolo|doce/.test(n))return '🎂';
+  if(/convite|papelaria|save/.test(n))return '💌';if(/passagem|v[oô]o/.test(n))return '✈️';
+  if(/transfer|transport|carro|vespa/.test(n))return '🚌';if(/hotel|hosped/.test(n))return '🏨';
+  if(/m[uú]sica|dj\b|banda|som/.test(n))return '🎵';if(/planner|assessor|cerimoni/.test(n))return '📋';
+  if(/trad[uú]|cart[oó]rio|doc|certid/.test(n))return '📜';if(/seguro/.test(n))return '🛡️';
+  if(/alia[nñ]/.test(n))return '💍';if(/drone/.test(n))return '🚁';
+  return '📄';
+}
+
+function defCL(){
+  return [
+    {id:uid(),section:'Documentação & Burocracia',label:'Escolha do cartório',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Prazo de entrada no processo',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Regime de bens',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Certidão religiosa (se houver)',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Curso de noivos (igreja)',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Taxas e prazos legais',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Apostilar documentos no Brasil',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Tradutora juramentada (Italiano/Português)',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Contato com Prefeitura de Lazise — Ufficio Anagrafe',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Documentação & Burocracia',label:'Verificar Nulla Osta consular',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Tipo de cerimônia (civil, religiosa, simbólica)',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Promoter / Wedding Planner local',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Local da cerimônia',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Celebrante / juiz de paz',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Taxas do local',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Horário e duração prevista',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Decoração da cerimônia',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Ensaios (se necessário)',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Votos',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Homenagem aos falecidos',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Plano B — chuva (tenda/área coberta)',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Layout do salão',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Pista de dança',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Espaço kids (se houver)',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Climatização',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Cerimônia & Festa',label:'Gerador',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Entrada Iago',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Entrada Laura',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Saída do casal',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Entrada na festa',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Valsa',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Playlist do casal',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Homenagem aos falecidos',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Vídeo do evento (retrospectiva)',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'DJ ou banda',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Equipamentos de som',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Iluminação cênica',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Telão / retrospectiva',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Músicas & Entretenimento',label:'Atrações extras (sax, violinista, pista LED)',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Tipo de serviço (jantar, coquetel, brunch)',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Cardápio',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Degustação',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Bebidas alcoólicas e não alcoólicas',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Bar (open bar ou consumo)',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Mesa de drink',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Bolo',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Doces',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Mesa de café',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Lanche da madrugada',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Buffet & Bebidas',label:'Restrições alimentares',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Conceito visual / paleta de cores',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Flores e arranjos',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Mesa dos noivos',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Mesa do bolo',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Identidade visual (convites, placas, menus)',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Velas, luzes, mobiliário',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Aluguel de objetos decorativos',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Torre de gelo',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Torre de taças',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Decoração & Identidade Visual',label:'Bolo feito juntos',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Foto & Vídeo',label:'Fotógrafo',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Foto & Vídeo',label:'Cinegrafista / Videomaker',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Foto & Vídeo',label:'Estilo das fotos',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Foto & Vídeo',label:'Making of dos noivos',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Foto & Vídeo',label:'Pré-wedding',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Foto & Vídeo',label:'Drone (se permitido)',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Foto & Vídeo',label:'Prazo de entrega',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Foto & Vídeo',label:'Álbum físico ou digital',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Foto & Vídeo',label:'Vídeo no final da festa',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Noivos',label:'Vestido da noiva',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Noivos',label:'Provas do vestido',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Noivos',label:'Véu / grinalda',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Noivos',label:'Sapato da noiva',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Noivos',label:'Joias',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Noivos',label:'Maquiagem',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Noivos',label:'Penteado',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Noivos',label:'Testes de make e cabelo',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Noivos',label:'Traje do noivo',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Noivos',label:'Sapato do noivo',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Noivos',label:'Gravata / gravata borboleta',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Noivos',label:'Abotoaduras',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Noivos',label:'Corte de cabelo / barba',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Alianças',label:'Modelo e material',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Alianças',label:'Gravação interna',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Alianças',label:'Prazo de entrega',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Alianças',label:'Estojo',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Alianças',label:'Daminhas',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Convites & Papelaria',label:'Lista de convidados',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Convites & Papelaria',label:'Save the date',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Convites & Papelaria',label:'Convite físico ou digital',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Convites & Papelaria',label:'Envelopes e correio',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Convites & Papelaria',label:'RSVP',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Convites & Papelaria',label:'Site do casamento',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Convites & Papelaria',label:'Menus impressos',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Convites & Papelaria',label:'Tags e placas',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Convites & Papelaria',label:'Lembrancinhas',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Presentes & Lista',label:'Lista de presentes',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Presentes & Lista',label:'Loja física ou online',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Presentes & Lista',label:'Cotas (lua de mel, experiências)',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Presentes & Lista',label:'Acompanhamento de recebidos',done:false,contractId:null,priority:'baixa'},
+    {id:uid(),section:'Logística',label:'Transporte dos noivos',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Logística',label:'Transporte de convidados',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Logística',label:'Carro da noiva',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Logística',label:'Vespa de entrada da festa',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Logística',label:'Hospedagem (noivos e convidados)',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Logística',label:'Estacionamento',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Logística',label:'Cronograma do dia',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Logística',label:'Assessoria / cerimonialista',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Logística',label:'Equipe de apoio no dia',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Lua de Mel',label:'Destino e datas',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Lua de Mel',label:'Passagens',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Lua de Mel',label:'Hospedagem',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Lua de Mel',label:'Roteiro',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Lua de Mel',label:'Seguro viagem',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Lua de Mel',label:'Documentos',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Eventos Extras',label:'Jantar de Sexta (Guné) — local / restaurante',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Eventos Extras',label:'Jantar de Sexta — cardápio e bebidas',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Eventos Extras',label:'Jantar de Sexta — decoração e ambientação',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Eventos Extras',label:'Jantar de Sexta — DJ ou música ao vivo',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Eventos Extras',label:'Jantar de Sexta — transfer / logística convidados',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Eventos Extras',label:'Passeio no Lago — barco / embarcação',done:false,contractId:null,priority:'alta'},
+    {id:uid(),section:'Eventos Extras',label:'Passeio no Lago — roteiro e paradas (Sirmione, Malcesine)',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Eventos Extras',label:'Passeio no Lago — almoço à beira do lago',done:false,contractId:null,priority:'media'},
+    {id:uid(),section:'Eventos Extras',label:'Passeio no Lago — guia / organizador local',done:false,contractId:null,priority:'baixa'}
+  ];
+}
+function defGuests(){
+  return [
+    {id:uid(),nome:'Sergio Sartor',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Cleusa de March Sartor',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Janio Fontanella',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Kenia Fontanella',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Bruna Fontanella',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Leandro Dal Forno',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Maria Luisa Dal Forno',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Davi Dal Forno',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Vitor Fontanella',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Manuela Abib',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Lais Rampinelli',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Manuela Rampinelli',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Cassimiro Masseneiro',categoria:'Família Principal',prob:'certeza',tipo:'convidado',status:'confirmado',obs:''},
+    {id:uid(),nome:'Leonor Rampinelli',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Luiz Rampinelli',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Daniela Ghizi',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Tia Angelina',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Tia Meri',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Marcio',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Aroldo De March',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Eleonora De March',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Pedro De March',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Isabela De March',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Carla Botini',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Guilherme Abati',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Valentina Abati',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Vitoria Abati',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Erzi Lourenço',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Chico Fontanella',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Denise Fontanella',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Mariana Fontanella',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Popo Fontanella',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Arlete Fontanella',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Vitoria Fontanella',categoria:'Família Secundária',prob:'media',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Rogerio Oliveira',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Gera Fontanella',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Henrique Oliveira',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Nicole',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Biba Fontanella',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Lu Boaventura',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Lucas Boaventura',categoria:'Família Secundária',prob:'media',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Aurea Fontanella',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Sid',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Mariana Fontanella (2)',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Luiz Fontanella',categoria:'Família Secundária',prob:'baixa',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Noemia Dal Forno',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Tomazo De March',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'João Acir',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Dani - João',categoria:'Família Secundária',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Raul Garcia',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Olivia Pavei',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Preta',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Flavio Garcia',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Otavio Garcia',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Barbara',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Vinicius Garcia',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Gustavo Grafulim',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Alessandra Garcia',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Arthur Michels',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Jakson',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Giulie',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Fernando',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Tizi',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Nicole (amiga)',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Pereba',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Ana Paula',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'João',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Karine',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Su',categoria:'Melhores Amigos',prob:'media',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Mariah',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Augusto',categoria:'Melhores Amigos',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Bebeto',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Camila',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Bilesimo',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Julia',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Ana Claudia',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Marco',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Caio',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Joana',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Gabi',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Companheiro Gabi',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Ste',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Companheiro Ste (Rael)',categoria:'Convivência',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Jason',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Simone',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Luca',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Joana (2)',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'João Francisco',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Henrique Pais',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Bruna Rovaris',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Padilha',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Vitor Michels',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Rafa Vitor',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Italo',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Duda',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Aron',categoria:'Outros',prob:'media',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Medina',categoria:'Outros',prob:'media',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Gustavinho',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Carol Gustavinho',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Pizzolo',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Gata Pizzolo',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'João Colombo',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Gata João Colombo',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Musta',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Bezerra',categoria:'Outros',prob:'media',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Livia',categoria:'Outros',prob:'media',tipo:'convidado',status:'pendente',obs:''},
+    {id:uid(),nome:'Gabi Rael',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Andre',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Carol Damiani',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Vic Zanatta',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Benner',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Paulo',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Marcinha',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Guguinha',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Acompanhante Guguinha',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Jota',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Veronica',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Luketa',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Tui Alessio',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Gata Tui Alessio',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Cicinho',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Malu',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Luigi',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Augusto (reserva)',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Gabi Augusto',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Sono',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Maira',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Jonas',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''},
+    {id:uid(),nome:'Esposa Jonas',categoria:'Lista Reserva',prob:'media',tipo:'reserva',status:'pendente',obs:''}
+  ];
+}
+
+function totals(){
+  var paid=0,dueC=0,orc=0,noivo=0,noiva=0,cxUso=0,nCnt=0,lCnt=0,cCnt=0;
+  state.contracts.forEach(function(c){
+    var tB=cBRL(c),p=paidOf(c);
+    orc+=tB;paid+=p;
+    if(c.status!=='previsto')dueC+=dueOf(c);
+    (c.payments||[]).forEach(function(py){
+      var a=pBRL(py);
+      if(py.paidBy==='Noiva'){noiva+=a;lCnt++;}
+      else if(py.paidBy==='Caixa'){cxUso+=a;cCnt++;}
+      else{noivo+=a;nCnt++;}
+    });
+  });
+  var cxT=(state.caixa.contributions||[]).reduce(function(s,c){return s+(c.amount||0);},0);
+  return{paid:paid,dueC:dueC,orc:orc,noivo:noivo,noiva:noiva,nCnt:nCnt,lCnt:lCnt,
+    cxUso:cxUso,cxT:cxT,cxDisp:cxT-cxUso,
+    prog:orc>0?Math.min(100,(paid/orc)*100):0};
+}
+function countdown(){
+  var now=new Date(),t=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  var td=Math.round((WEDDING-t)/86400000);
+  if(td<=0)return{main:'<span style="color:var(--gold)">💕</span>',days:'',done:true};
+  var mo=(WEDDING.getFullYear()-t.getFullYear())*12+(WEDDING.getMonth()-t.getMonth());
+  var anc=new Date(t.getFullYear(),t.getMonth()+mo,t.getDate());
+  if(anc>WEDDING){mo--;anc=new Date(t.getFullYear(),t.getMonth()+mo,t.getDate());}
+  var dias=Math.round((WEDDING-anc)/86400000);
+  var main='<span style="color:var(--gold)">'+mo+'</span><span class="unit"> meses</span>'
+          +'<span class="unit" style="color:rgba(240,246,255,.7);font-size:.5em;margin:0 4px">e</span>'
+          +'<span style="color:var(--gold)">'+dias+'</span><span class="unit"> dias</span>';
+  var days='<span style="color:var(--gold);font-weight:700">'+td+'</span> dias no total';
+  return{main:main,days:days,done:false};
+}
+
+// ── DASHBOARD ──
+function renderDash(){
+  var t=totals(),cd=countdown(),orc=state.orcamentoMeta||0;
+  var clDone=state.checklist.filter(function(i){return i.done;}).length;
+  var clTotal=state.checklist.length;
+  var clPct=clTotal?Math.round((clDone/clTotal)*100):0;
+  var orcSub=orc>0&&t.paid>0?Math.round((t.paid/orc)*100)+'% utilizado':'Clique para definir';
+  var h='';
+  // EUR bar
+  h+='<div class="eur-bar">💶 Câmbio: 1 EUR = <input id="eurIn" type="number" step="0.01" value="'+eurRate.toFixed(2)+'"> BRL';
+  h+='<span style="opacity:.7;margin-left:8px">Contratos: <strong>'+fmtBRL(t.orc)+'</strong> / <strong>'+fmtEUR(b2e(t.orc))+'</strong></span></div>';
+  // Countdown hero
+  h+='<div class="glass dash-hero">';
+  h+='<div class="dash-cd-val">'+cd.main+'</div>';
+  if(!cd.done)h+='<div class="dash-cd-sub">'+cd.days+'</div>';
+  h+='</div>';
+  // 3 stats alinhados
+  h+='<div class="stats3">';
+  h+='<div class="glass stat3 s-caixa"><div class="sl">Caixa disponível</div>';
+  h+='<div class="sv teal"><span class="pfx">R$</span><input id="cxIn" type="text" inputmode="decimal" placeholder="0,00"></div>';
+  h+='<div class="ss">de '+fmtBRL(t.cxT)+' arrecadados</div></div>';
+  h+='<div class="glass stat3"><div class="sl">Já pago</div>';
+  h+='<div class="sv green"><span class="pfx">R$</span><span>'+fmtBRL(t.paid).replace('R$','').trim()+'</span></div>';
+  h+='<div class="ss">'+Math.round(t.prog)+'% do orçamento</div></div>';
+  h+='<div class="glass stat3"><div class="sl">Orçamento total</div>';
+  h+='<div class="sv amber"><span class="pfx">R$</span><input id="orcIn" type="text" inputmode="decimal" placeholder="0,00"></div>';
+  h+='<div class="ss">'+orcSub+'</div></div>';
+  h+='</div>';
+  // Bottom: checklist % + botão caixa
+  h+='<div class="glass" style="padding:16px 18px">';
+  h+='<div class="dash-bottom">';
+  h+='<div class="dash-cl-prog">';
+  h+='<div class="plbl">Checklist de tarefas</div>';
+  h+='<div style="display:flex;align-items:center;gap:12px">';
+  h+='<div class="pct">'+clPct+'%</div>';
+  h+='<div style="flex:1"><div class="prog-bar" style="height:8px"><span style="width:'+clPct+'%"></span></div>';
+  h+='<div style="font-size:11px;color:var(--faint);margin-top:4px">'+clDone+' de '+clTotal+' tarefas concluídas</div></div>';
+  h+='</div></div>';
+  h+='<button class="btn sm" id="btnCaixa">🐷 Registrar contribuição ao caixa</button>';
+  h+='</div></div>';
+  document.getElementById('sec-dashboard').innerHTML=h;
+  var cxEl=document.getElementById('cxIn');
+  if(cxEl){cxEl.value=t.cxT>0?fmtBRL(t.cxT).replace('R$','').trim():'';}
+  var orcEl=document.getElementById('orcIn');
+  if(orcEl){orcEl.value=orc>0?fmtBRL(orc).replace('R$','').trim():'';}
+}
+
+// ── PLANO & CONTRATOS (unificado) ──
+function renderCC(){
+  var items=state.checklist||[];
+  var secs={};
+  items.forEach(function(i){if(!secs[i.section])secs[i.section]=[];secs[i.section].push(i);});
+  var done=items.filter(function(i){return i.done;}).length;
+  var prog=items.length?Math.min(100,(done/items.length)*100):0;
+  var h='';
+  // Header com progresso + filtros + btn novo
+  h+='<div class="glass" style="padding:12px 14px 10px;margin-bottom:10px">';
+  h+='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">';
+  h+='<span style="font-weight:700;font-size:14px">Plano & Contratos</span>';
+  h+='<span style="color:var(--ok);font-weight:700;font-size:13px">'+done+'/'+items.length+' ('+Math.round(prog)+'%)</span></div>';
+  h+='<div class="prog-bar"><span style="width:'+prog+'%"></span></div>';
+  h+='<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center">';
+  h+='<div style="display:flex;gap:3px;flex-wrap:wrap">';
+  var fltBtns=[['todos','Todos'],['done','Feitos'],['pendente','Pendentes'],['com-contrato','Com contrato']];
+  fltBtns.forEach(function(f){h+='<button class="cc-tab'+(plFlt===f[0]?' active':'')+'" data-plflt="'+f[0]+'">'+f[1]+'</button>';});
+  h+='</div>';
+  h+='<button class="btn primary sm" id="btnNewContract" style="margin-left:auto">+ Nova contratação direta</button>';
+  h+='</div></div>';
+  // Seções do checklist
+  Object.keys(secs).forEach(function(sec){
+    var its=secs[sec];
+    // Filtrar
+    var filt=its;
+    if(plFlt==='done')filt=its.filter(function(i){return i.done;});
+    else if(plFlt==='pendente')filt=its.filter(function(i){return !i.done;});
+    else if(plFlt==='com-contrato')filt=its.filter(function(i){return i.contractId;});
+    if(!filt.length)return;
+    var dc=its.filter(function(i){return i.done;}).length;
+    h+='<div class="glass" style="overflow:hidden;margin-bottom:10px">';
+    h+='<div class="cl-sec-h"><span>'+esc(sec)+'</span><span class="cnt">'+dc+'/'+its.length+'</span></div>';
+    filt.forEach(function(item){
+      var pl=item.priority==='alta'?'Alta':item.priority==='media'?'Média':'Baixa';
+      var hasContr=!!item.contractId;
+      var contr=hasContr?state.contracts.find(function(x){return x.id===item.contractId;}):null;
+      h+='<div class="pl-item'+(item.done?' done':'')+'" data-plid="'+item.id+'">';
+      // Linha principal
+      h+='<div class="pl-row">';
+      h+='<div class="pl-chk">'+(item.done?'✓':'')+'</div>';
+      h+='<span class="pl-lbl">'+esc(item.label)+'</span>';
+      h+='<div class="pl-meta">';
+      if(contr){
+        var q=isQ(contr);
+        var lbl=q?'Quitado':(contr.status==='contratado'?contr.supplier||'Contratado':'Previsto');
+        h+='<span class="pl-contract'+(contr.status==='previsto'?' prev':'')+'">'+esc(lbl)+'</span>';
+      }
+      h+='<span class="pri '+item.priority+'">'+pl+'</span>';
+      h+='<button class="pl-expand" data-expand="'+item.id+'" title="'+(contr?'Ver / editar contrato':'Adicionar contrato')+'">'+(contr?'📋':'＋')+'</button>';
+      h+='</div></div>';
+      // Painel expandido (contrato inline)
+      var detailOpen=expandedId===item.id;
+      h+='<div class="pl-detail'+(detailOpen?' open':'')+'" id="pld-'+item.id+'">';
+      if(detailOpen){
+        // Inline contract form
+        var ci=contr||{item:item.label,supplier:'',total:0,currency:'BRL',origin:'italia',status:'previsto',notes:''};
+        h+='<div class="pl-detail-grid">';
+        h+='<div class="fd"><label>Fornecedor</label><input id="pci-supp-'+item.id+'" value="'+esc(ci.supplier||'')+'" placeholder="Nome do fornecedor"></div>';
+        h+='<div class="fd"><label>País</label><select id="pci-orig-'+item.id+'"><option value="italia"'+(ci.origin==='italia'?' selected':'')+'>🇮🇹 Itália</option><option value="brasil"'+(ci.origin!=='italia'?' selected':'')+'>🇧🇷 Brasil</option></select></div>';
+        h+='<div class="fd"><label>Moeda</label><select id="pci-cur-'+item.id+'"><option value="EUR"'+(ci.currency==='EUR'?' selected':'')+'>€ EUR</option><option value="BRL"'+(ci.currency==='BRL'?' selected':'')+'>R$ BRL</option></select></div>';
+        h+='<div class="fd"><label>Valor</label><input id="pci-val-'+item.id+'" inputmode="decimal" value="'+String(ci.total||0).replace('.',',')+'" placeholder="0,00"></div>';
+        h+='<div class="fd"><label>Situação</label><select id="pci-st-'+item.id+'"><option value="previsto"'+(ci.status==='previsto'?' selected':'')+'>Previsto</option><option value="contratado"'+(ci.status==='contratado'?' selected':'')+'>Contratado</option></select></div>';
+        h+='<div class="fd"><label>Observações</label><input id="pci-notes-'+item.id+'" value="'+esc(ci.notes||'')+'" placeholder="Contato, prazo..."></div>';
+        h+='</div>';
+        h+='<div style="display:flex;gap:7px;margin-top:4px">';
+        h+='<button class="pl-save-btn" data-plsave="'+item.id+'">💾 Salvar contrato</button>';
+        if(contr)h+='<button class="pl-save-btn" data-plopen="'+item.id+'" style="background:rgba(32,96,200,.15);color:var(--noivo)">Ver pagamentos →</button>';
+        if(contr)h+='<button class="pl-save-btn" data-pldel="'+item.id+'" style="background:rgba(212,64,96,.12);color:var(--danger)">Remover contrato</button>';
+        h+='</div>';
+      }
+      h+='</div></div>';
+    });
+    // Add tarefa na seção — usando data-secid para evitar problemas com acentos
+    var secSafe=btoa(unescape(encodeURIComponent(sec))).slice(0,20);
+    h+='<div class="cl-add" data-seckey="'+secSafe+'">';
+    h+='<input class="cl-new-lbl" placeholder="Nova tarefa..." style="flex:1">';
+    h+='<select class="cl-new-pri"><option value="alta">Alta</option><option value="media">Média</option><option value="baixa">Baixa</option></select>';
+    h+='<button class="btn sm cl-add-btn">Adicionar</button></div>';
+    h+='</div>';
+  });
+  document.getElementById('sec-cc').innerHTML=h;
+}
+
+// ── CONVIDADOS ──
+function renderConvidados(){
+  var guests=state.guests||[];
+  var conv=guests.filter(function(g){return g.tipo==='convidado';});
+  var res=guests.filter(function(g){return g.tipo==='reserva';});
+  var conf=guests.filter(function(g){return g.status==='confirmado';});
+  var certeza=conv.filter(function(g){return g.prob==='certeza';});
+  var alta=conv.filter(function(g){return g.prob==='alta';});
+  var media=conv.filter(function(g){return g.prob==='media';});
+  var baixa=conv.filter(function(g){return g.prob==='baixa';});
+
+  var h='';
+
+  // Card principal
+  h+='<div class="glass g-main-card" style="margin-bottom:12px">';
+  h+='<div style="font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--dim);font-weight:700;margin-bottom:6px">Total de convidados</div>';
+  h+='<div class="g-main-total">'+conv.length+'<span style="font-size:.3em;font-weight:500;opacity:.65;margin-left:8px">('+conf.length+' confirmados)</span></div>';
+  h+='<div class="g-sub-row">';
+  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--ok)">'+certeza.length+'</div><div class="g-sub-lbl">Certeza</div></div>';
+  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--ok)">'+alta.length+'</div><div class="g-sub-lbl">Alta</div></div>';
+  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--twd)">'+media.length+'</div><div class="g-sub-lbl">Média</div></div>';
+  h+='<div class="g-sub-item"><div class="g-sub-val" style="color:var(--faint)">'+baixa.length+'</div><div class="g-sub-lbl">Baixa</div></div>';
+  h+='</div>';
+  h+='<div><span class="g-reserva-pill">Lista Reserva: '+res.length+' pessoas</span></div>';
+  h+='</div>';
+
+  // Painel da lista
+  h+='<div class="glass" style="overflow:hidden">';
+
+  // Barra de busca
+  h+='<div style="padding:10px 13px 0">';
+  h+='<div class="g-search-wrap">';
+  h+='<span class="icon">🔍</span>';
+  h+='<input class="g-search" id="gSearch" type="text" placeholder="Buscar por nome..." value="'+esc(guestSearch)+'">';
+  h+='</div></div>';
+
+  // Filtros — linha 1: probabilidade
+  h+='<div class="g-flt-row">';
+  h+='<div class="g-flt-group">';
+  var fltProb=[
+    ['todos','Todos'],
+    ['certeza','Certeza'],
+    ['alta','Alta'],
+    ['media','Média'],
+    ['baixa','Baixa'],
+    ['confirmado','✓ Confirm.'],
+    ['reserva','Reserva']
+  ];
+  fltProb.forEach(function(f){
+    h+='<button class="cc-tab'+(guestFlt===f[0]?' active':'')+'" data-gflt="'+f[0]+'">'+f[1]+'</button>';
+  });
+  h+='</div>';
+  h+='</div>';
+
+  // Filtros — linha 2: categorias
+  h+='<div class="g-flt-row" style="padding-top:6px;padding-bottom:8px">';
+  h+='<div class="g-flt-group">';
+  var cats=['Família Principal','Família Secundária','Melhores Amigos','Convivência','Outros','Lista Reserva'];
+  cats.forEach(function(cat){
+    var key='cat:'+cat;
+    h+='<button class="cc-tab'+(guestFlt===key?' active':'')+'" data-gflt="'+esc(key)+'">'+esc(cat)+'</button>';
+  });
+  h+='</div>';
+  h+='<button class="btn primary sm" id="btnNewGuest" style="margin-left:auto">+ Convidado</button>';
+  h+='</div>';
+
+  // Aplicar filtros
+  var filt=guests.slice();
+  // Filtro por aba
+  if(guestFlt==='certeza')filt=filt.filter(function(g){return g.prob==='certeza';});
+  else if(guestFlt==='alta')filt=filt.filter(function(g){return g.prob==='alta';});
+  else if(guestFlt==='media')filt=filt.filter(function(g){return g.prob==='media';});
+  else if(guestFlt==='baixa')filt=filt.filter(function(g){return g.prob==='baixa';});
+  else if(guestFlt==='confirmado')filt=filt.filter(function(g){return g.status==='confirmado';});
+  else if(guestFlt==='reserva')filt=filt.filter(function(g){return g.tipo==='reserva';});
+  else if(guestFlt.indexOf('cat:')===0){
+    var catFlt=guestFlt.slice(4);
+    filt=filt.filter(function(g){return g.categoria===catFlt;});
+  }
+  // Filtro por busca de texto
+  if(guestSearch.trim()){
+    var q=guestSearch.trim().toLowerCase();
+    filt=filt.filter(function(g){return (g.nome||'').toLowerCase().indexOf(q)>-1;});
+  }
+
+  // Contagem
+  h+='<div style="padding:4px 13px 6px;font-size:11px;color:var(--faint)">'+filt.length+' pessoa'+(filt.length===1?'':'s')+(guestSearch?' encontrada'+(filt.length===1?'':'s'):'')+'</div>';
+
+  // Tabela
+  h+='<div class="g-head"><div>#</div><div>Nome</div><div>Categoria</div><div>Prob.</div><div>Status</div><div>Tipo</div></div>';
+  if(!filt.length){
+    h+='<div class="empty" style="padding:24px">'+( guestSearch?'Nenhum resultado para "'+esc(guestSearch)+'"':'Nenhum neste filtro.')+'</div>';
+  }else{
+    filt.forEach(function(g,i){
+      var probCls=g.prob==='certeza'||g.prob==='alta'?'alta':g.prob==='media'?'media':'baixa';
+      var probLabel=g.prob==='certeza'?'Certeza':g.prob==='alta'?'Alta':g.prob==='media'?'Média':'Baixa';
+      var stLabel=g.status==='confirmado'?'confirmado':g.status==='nao-vai'?'nao-vai':'pendente';
+      var stTxt=g.status==='confirmado'?'✓ Confirmado':g.status==='nao-vai'?'Não vai':'Pendente';
+      var tipoClass=g.tipo==='reserva'?'reserva-t':'pendente';
+      // Destacar texto buscado no nome
+      var nomeHtml=esc(g.nome);
+      if(guestSearch.trim()){
+        var q=guestSearch.trim();
+        var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+        nomeHtml=esc(g.nome).replace(re,'<mark style="background:rgba(245,201,106,.45);color:var(--text);border-radius:3px;padding:0 2px">$1</mark>');
+      }
+      h+='<div class="g-row" data-gid="'+g.id+'"><div class="g-num">'+(i+1)+'</div>';
+      h+='<div class="gn">'+nomeHtml+'</div>';
+      h+='<div class="gc">'+esc(g.categoria)+'</div>';
+      h+='<div><span class="pri '+probCls+'">'+probLabel+'</span></div>';
+      h+='<div><span class="gst '+stLabel+'">'+stTxt+'</span></div>';
+      h+='<div><span class="gst '+tipoClass+'">'+(g.tipo==='reserva'?'Reserva':'Convidado')+'</span></div></div>';
+    });
+  }
+
+  // Add rápido
+  h+='<div class="g-add"><input id="gNome" placeholder="Nome do convidado...">';
+  h+='<select id="gCat"><option value="Família Principal">Família Principal</option><option value="Família Secundária">Família Secundária</option><option value="Melhores Amigos">Melhores Amigos</option><option value="Convivência">Convivência</option><option value="Outros">Outros</option><option value="Lista Reserva">Lista Reserva</option></select>';
+  h+='<select id="gProb"><option value="certeza">Certeza</option><option value="alta">Alta</option><option value="media">Média</option><option value="baixa">Baixa</option></select>';
+  h+='<button class="btn sm" id="gAdd">Adicionar</button></div>';
+  h+='</div>';
+
+  document.getElementById('sec-convidados').innerHTML=h;
+
+  // Campo de busca — listener inline (seguro pois innerHTML recria o elemento)
+  var gSrch=document.getElementById('gSearch');
+  if(gSrch){
+    gSrch.focus();
+    gSrch.setSelectionRange(gSrch.value.length,gSrch.value.length);
+    gSrch.addEventListener('input',function(){guestSearch=this.value;renderConvidados();});
+  }
+}
+
+// ── O GRANDE DIA ──
+function renderGrandia(){
+  var h='<div class="gd-hero">';
+  h+='<h2>💍 Laura &amp; Iago</h2>';
+  h+='<div class="ghs">Laura Domingos Fontanella &amp; Iago Sartor</div>';
+  h+='<div class="ghd">08 de abril de 2028 · Lago di Garda, Itália</div></div>';
+
+  // 4 abas
+  h+='<div class="glass gd-tabs">';
+  h+='<button class="gd-tab'+(gdTab==='quinta'?' active':'')+'" data-gdtab="quinta">🍷 Sexta — Jantar</button>';
+  h+='<button class="gd-tab'+(gdTab==='sabado'?' active':'')+'" data-gdtab="sabado">⛵ Sábado — Lago</button>';
+  h+='<button class="gd-tab'+(gdTab==='manha'?' active':'')+'" data-gdtab="manha">🌅 Manhã — Making Of</button>';
+  h+='<button class="gd-tab'+(gdTab==='cerimonia'?' active':'')+'" data-gdtab="cerimonia">💍 Cerimônia & Festa</button>';
+  h+='</div>';
+
+  h+='<div class="glass" style="overflow:hidden;margin-bottom:12px">';
+
+  if(gdTab==='quinta'){
+    // QUINTA — Jantar Guné (sexta na narrativa = véspera)
+    var tl=[
+      {t:'19:00h',title:'Chegada dos convidados',desc:'Recepção e boas-vindas no local do jantar em Peschiera del Garda.',tags:['Recepção'],dot:'teal',tc:'teal'},
+      {t:'19:30h',title:'Aperitivo do Noivo',desc:'Aperitivo especial com família e amigos íntimos às margens do lago.',tags:['Iago','Aperitivo','Lago'],dot:'teal',tc:'teal'},
+      {t:'20:30h',title:'Jantar Guné',desc:'Jantar comemorativo de véspera com todos os convidados. Momento de celebração e reencontros.',tags:['Jantar','Guné','Família','Amigos'],dot:'teal',tc:'teal'},
+      {t:'22:30h',title:'Encerramento',desc:'Encerramento do jantar e descanso antes do grande dia.',tags:['Encerramento'],dot:'teal',tc:'teal'},
+    ];
+    h+='<div style="padding:12px 16px 4px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:rgba(45,212,191,.8);font-weight:700">Sexta-feira · Véspera do Casamento · Peschiera del Garda</div>';
+    tl.forEach(function(item){h+=renderTLItem(item);});
+  }
+  else if(gdTab==='sabado'){
+    // SÁBADO — Passeio no Lago
+    var tl=[
+      {t:'09:00h',title:'Café da manhã coletivo',desc:'Café da manhã especial para o grupo no hotel ou villa.',tags:['Café','Grupo'],dot:'blue',tc:'blue'},
+      {t:'10:30h',title:'Embarque no barco',desc:'Passeio de barco pelo Lago di Garda — saindo de Lazise para Sirmione e Malcesine.',tags:['Barco','Lago di Garda','Sirmione'],dot:'blue',tc:'blue'},
+      {t:'13:00h',title:'Almoço à beira do lago',desc:'Parada para almoço em restaurante com vista para o lago.',tags:['Almoço','Lago'],dot:'blue',tc:'blue'},
+      {t:'15:00h',title:'Passeio livre',desc:'Exploração das vilas medievais do lago, compras e fotos.',tags:['Passeio','Lazise','Bardolino'],dot:'blue',tc:'blue'},
+      {t:'17:00h',title:'Retorno',desc:'Retorno ao hotel para descanso.',tags:['Retorno'],dot:'blue',tc:'blue'},
+    ];
+    h+='<div style="padding:12px 16px 4px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:rgba(96,165,250,.8);font-weight:700">Sábado · Dia após o casamento · Lago di Garda</div>';
+    tl.forEach(function(item){h+=renderTLItem(item);});
+  }
+  else if(gdTab==='manha'){
+    // MANHÃ DO CASAMENTO — Making of
+    var tl=[
+      {t:'07:00h',title:'Acordar — dia do casamento! 💍',desc:'',tags:['Dia do casamento'],dot:'rose',tc:'rose'},
+      {t:'08:00h',title:'Making of da Noiva',desc:'Início da make e cabelo de Laura. Sessão de fotos do making of.',tags:['Laura','Make','Cabelo','Foto'],dot:'rose',tc:'rose'},
+      {t:'09:00h',title:'Making of do Noivo',desc:'Preparação e fotos do making of de Iago.',tags:['Iago','Foto'],dot:'rose',tc:'rose'},
+      
+      {t:'13:00h',title:'Almoço leve dos noivos',desc:'Refeição leve antes da cerimônia.',tags:['Noivos'],dot:'rose',tc:'rose'},
+      {t:'14:00h',title:'Preparativos finais',desc:'Últimos ajustes, fotos individuais e momento de recolhimento antes da cerimônia.',tags:['Noivos','Fotos'],dot:'rose',tc:'rose'},
+      {t:'14:45h',title:'Posicionamento',desc:'Noivo e padrinhos se posicionam para receber os convidados.',tags:['Cerimônia'],dot:'gold',tc:''},
+    ];
+    h+='<div style="padding:12px 16px 4px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:rgba(244,114,182,.8);font-weight:700">Domingo, 08 de Abril · Manhã · Lazise</div>';
+    tl.forEach(function(item){h+=renderTLItem(item);});
+  }
+  else {
+    // CERIMÔNIA & FESTA
+    var tl=[
+      {t:'15:00h',title:'Cerimônia',desc:'Início da cerimônia de casamento.',tags:['Cerimônia'],dot:'gold',tc:''},
+      {t:'16:15h',title:'Encerra Cerimônia',desc:'',tags:['Cerimônia'],dot:'gold',tc:''},
+      {t:'16:15h',title:'Welcome Drink + Frios + Música',desc:'Estação de frios, welcome drink e conjunto musical para os convidados enquanto os noivos fazem fotos.',tags:['Recepção','Catering','Música'],dot:'gold',tc:''},
+      {t:'17:00h',title:'Brinde',desc:'Brinde com pais e padrinhos.',tags:['Família','Padrinhos'],dot:'gold',tc:''},
+      {t:'17:40h',title:'Momentos com os convidados',desc:'Confraternização e fotos com todos os convidados.',tags:['Fotos','Convidados'],dot:'gold',tc:''},
+      {t:'19:00h',title:'Sobremesa',desc:'Serviço de sobremesas e doces.',tags:['Catering','Doces'],dot:'gold',tc:''},
+      {t:'19:30h',title:'Banda',desc:'Show da banda ao vivo.',tags:['Música','Banda'],dot:'gold',tc:''},
+      {t:'21:00h',title:'Encerra Banda',desc:'',tags:['Música'],dot:'gold',tc:''},
+      {t:'21:01h',title:'DJ',desc:'DJ assume a pista de dança.',tags:['Música','DJ'],dot:'gold',tc:''},
+      {t:'22:00h',title:'Lanche da Madrugada',desc:'Serviço do lanche da madrugada.',tags:['Catering'],dot:'gold',tc:''},
+    ];
+    h+='<div style="padding:12px 16px 4px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:rgba(245,201,106,.8);font-weight:700">Domingo, 08 de Abril · Cerimônia & Festa · Lazise</div>';
+    tl.forEach(function(item){h+=renderTLItem(item);});
+  }
+
+  h+='</div>';
+
+  // Anotações por aba
+  var notaId=gdTab==='quinta'?'notaQuinta':gdTab==='sabado'?'notaSabado':gdTab==='manha'?'notaManha':'grandiaNotas';
+  var notaPlaceholder=gdTab==='quinta'?'Restaurante, lista de presença, cardápio do jantar...':gdTab==='sabado'?'Barco reservado, roteiro do passeio, lista de participantes...':gdTab==='manha'?'Contato make, horário das fotos, locais...':'Lembretes, contatos de emergência, detalhes de última hora...';
+  h+='<div class="glass notes-panel"><h3>📝 Anotações</h3>';
+  h+='<textarea class="notes-area" id="'+notaId+'" placeholder="'+notaPlaceholder+'"></textarea></div>';
+
+  document.getElementById('sec-grandia').innerHTML=h;
+
+  // Helper renderTLItem — injetado como string acima porque JS não permite funções aninhadas com var _h
+  // Setar notas
+  var notaEl=document.getElementById(notaId);
+  if(notaEl){
+    notaEl.value=state[notaId]||'';
+    notaEl.addEventListener('input',function(){state[notaId]=this.value;save();});
+  }
+}
+
+// Helper para timeline — retorna string HTML
+function renderTLItem(item){
+  var dotCls='tl-dot '+(item.dot||'gold');
+  var timeCls='tl-time'+(item.tc?' '+item.tc:'');
+  var tagCls=item.dot||'';
+  var s='<div class="tl-item"><div class="'+timeCls+'">'+item.t+'</div><div class="'+dotCls+'"></div><div class="tl-body">';
+  s+='<div class="tl-title">'+item.title+'</div>';
+  if(item.desc)s+='<div class="tl-desc">'+item.desc+'</div>';
+  s+='<div class="tl-tags">';
+  item.tags.forEach(function(tg){s+='<span class="tl-tag'+(tagCls?' '+tagCls:'')+'">'+tg+'</span>';});
+  s+='</div></div></div>';
+  return s;
+}
+
+
+// ── RENDER PRINCIPAL ──
+function render(){
+  ['dashboard','cc','convidados','grandia'].forEach(function(v){
+    var el=document.getElementById('sec-'+v);
+    if(el)el.style.display=curView===v?'':'none';
+  });
+  document.querySelectorAll('nav.tabs button[data-view]').forEach(function(b){
+    b.classList.toggle('active',b.getAttribute('data-view')===curView);
+  });
+  var fb=document.getElementById('filtersBar');
+  if(fb)fb.style.display='none';
+  var bn=document.getElementById('btnNew');
+  if(bn)bn.style.display='none'; // handled inside cc
+  if(curView==='dashboard')renderDash();
+  else if(curView==='cc')renderCC();
+  else if(curView==='convidados')renderConvidados();
+  else if(curView==='grandia')renderGrandia();
+}
+
+// ── MODAIS ──
+function showModal(h){
+  var m=document.getElementById('modal');
+  m.innerHTML=h;document.getElementById('overlay').classList.add('open');m.scrollTop=0;
+  m.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',closeModal);});
+}
+function closeModal(){
+  document.getElementById('overlay').classList.remove('open');
+  if(viewDirty){viewDirty=false;render();}
+}
+
+function openNew(){
+  var h='<div class="mh"><h3>Nova contratação</h3><button class="x" data-close>&times;</button></div>';
+  h+='<div class="msub">Fornecedor italiano ou brasileiro</div>';
+  h+='<div class="field"><label>Item / serviço</label><input id="nItem" placeholder="Ex.: Fotografia, Villa, Catering..."></div>';
+  h+='<div class="field"><label>Fornecedor</label><input id="nSupp" placeholder="Nome do fornecedor"></div>';
+  h+='<div class="frow"><div class="field"><label>País</label><select id="nOrigin"><option value="italia">🇮🇹 Itália</option><option value="brasil">🇧🇷 Brasil</option></select></div>';
+  h+='<div class="field"><label>Situação</label><select id="nStatus"><option value="previsto">Previsto</option><option value="contratado">Contratado</option></select></div></div>';
+  h+='<div class="frow"><div class="field"><label>Moeda</label><select id="nCur"><option value="EUR">€ EUR</option><option value="BRL">R$ BRL</option></select></div>';
+  h+='<div class="field"><label>Valor total</label><input id="nTotal" inputmode="decimal" placeholder="0,00"></div></div>';
+  h+='<div class="eur-note" id="nHint" style="display:none">≈ R$ <span id="nPrev"></span></div>';
+  h+='<div class="field"><label>Observações</label><textarea id="nNotes" rows="2" placeholder="Contato, prazo..."></textarea></div>';
+  h+='<button class="btn primary" id="nSave" style="width:100%;justify-content:center;margin-top:4px">Adicionar contratação</button>';
+  showModal(h);
+  var curEl=document.getElementById('nCur'),totEl=document.getElementById('nTotal'),hint=document.getElementById('nHint'),prev=document.getElementById('nPrev');
+  function upd(){if(curEl.value==='EUR'){hint.style.display='block';var v=pm(totEl.value);prev.textContent=v>0?fmtBRL(e2b(v)):'—';}else hint.style.display='none';}
+  curEl.addEventListener('change',upd);totEl.addEventListener('input',upd);
+  document.getElementById('nSave').addEventListener('click',function(){
+    var item=document.getElementById('nItem').value.trim();if(!item){document.getElementById('nItem').focus();return;}
+    state.contracts.push({id:uid(),item:item,supplier:document.getElementById('nSupp').value.trim()||'A definir',total:pm(document.getElementById('nTotal').value),currency:curEl.value,origin:document.getElementById('nOrigin').value,status:document.getElementById('nStatus').value,notes:document.getElementById('nNotes').value.trim(),payments:[]});
+    save();viewDirty=true;closeModal();
+  });
+}
+
+function openDetail(id){
+  var c=state.contracts.find(function(x){return x.id===id;});if(!c)return;
+  var tB=cBRL(c),paid=paidOf(c),due=dueOf(c);
+  var h='<div class="mh"><h3>'+iIcon(c.item)+' '+esc(c.item)+'</h3><button class="x" data-close>&times;</button></div>';
+  h+='<div class="msub">'+(c.origin==='italia'?'🇮🇹 Fornecedor italiano':'🇧🇷 Fornecedor brasileiro')+'</div>';
+  h+='<div class="msum"><div class="cell"><div class="l">Total</div><div class="v">'+(c.currency==='EUR'?fmtEUR(c.total):fmtBRL(c.total))+'</div>'+(c.currency==='EUR'?'<div style="font-size:9.5px;color:var(--eur)">≈'+fmtBRL(tB)+'</div>':'')+'</div>';
+  h+='<div class="cell"><div class="l">Pago</div><div class="v ok">'+fmtBRL(paid)+'</div></div>';
+  h+='<div class="cell"><div class="l">Falta</div><div class="v warn">'+fmtBRL(due)+'</div></div></div>';
+  h+='<div class="stitle">Dados</div>';
+  h+='<div class="frow"><div class="field"><label>Item</label><input id="eItem" value="'+esc(c.item||'')+'"></div>';
+  h+='<div class="field"><label>Fornecedor</label><input id="eSupp" value="'+esc(c.supplier||'')+'"></div></div>';
+  h+='<div class="frow"><div class="field"><label>País</label><select id="eOrigin"><option value="italia"'+(c.origin==='italia'?' selected':'')+'>🇮🇹 Itália</option><option value="brasil"'+(c.origin!=='italia'?' selected':'')+'>🇧🇷 Brasil</option></select></div>';
+  h+='<div class="field"><label>Situação</label><select id="eStatus"><option value="previsto"'+(c.status==='previsto'?' selected':'')+'>Previsto</option><option value="contratado"'+(c.status==='contratado'?' selected':'')+'>Contratado</option></select></div></div>';
+  h+='<div class="frow"><div class="field"><label>Moeda</label><select id="eCur"><option value="EUR"'+(c.currency==='EUR'?' selected':'')+'>€ EUR</option><option value="BRL"'+(c.currency==='BRL'?' selected':'')+'>R$ BRL</option></select></div>';
+  h+='<div class="field"><label>Valor</label><input id="eTotal" inputmode="decimal" value="'+String(c.total||0).replace('.',',')+'"></div></div>';
+  h+='<div class="field"><label>Observações</label><textarea id="eNotes" rows="2">'+esc(c.notes||'')+'</textarea></div>';
+  h+='<button class="btn sm" id="eSave" style="width:100%;justify-content:center;margin-bottom:13px">Salvar alterações</button>';
+  h+='<div class="stitle">Pagamentos ('+(c.payments||[]).length+')</div>';
+  h+='<div class="pay-list" id="payList">';
+  if(!(c.payments||[]).length)h+='<div style="font-size:12.5px;color:var(--twd);padding:7px 0">Nenhum pagamento lançado.</div>';
+  else c.payments.slice().sort(function(a,b){return(b.date||'').localeCompare(a.date||'');}).forEach(function(p){
+    var cls=p.paidBy==='Noiva'?'dl':(p.paidBy==='Caixa'?'dc':'dn');
+    h+='<div class="pay-item"><span class="dot '+cls+'"></span><div class="pi"><div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px"><span class="pa">'+(p.currency==='EUR'?fmtEUR(p.amount):fmtBRL(p.amount))+'</span>'+(p.currency==='EUR'?'<span style="font-size:9.5px;color:var(--eur)">≈'+fmtBRL(pBRL(p))+'</span>':'')+'<span class="pw '+cls+'">'+esc(p.paidBy)+'</span></div><div class="pm">'+fmtDate(p.date)+(p.note?' · '+esc(p.note):'')+'</div></div><button class="del" data-delpay="'+p.id+'">&times;</button></div>';
+  });
+  h+='</div>';
+  h+='<div class="addp"><div class="frow" style="margin-bottom:8px">';
+  h+='<div class="field" style="margin-bottom:0"><label>Moeda</label><select id="pCur"><option value="BRL">R$ BRL</option><option value="EUR">€ EUR</option></select></div>';
+  h+='<div class="field" style="margin-bottom:0"><label>Valor</label><input id="pAmt" inputmode="decimal" placeholder="0,00"></div>';
+  h+='<div class="field" style="margin-bottom:0"><label>Data</label><input id="pDate" type="date" value="'+todayISO()+'"></div></div>';
+  h+='<div class="field" style="margin-bottom:8px"><label>Quem pagou?</label><div class="toggle" id="pToggle">';
+  h+='<button type="button" data-who="Noivo" class="'+(draftWho==='Noivo'?'sn':'')+'">Você</button>';
+  h+='<button type="button" data-who="Noiva" class="'+(draftWho==='Noiva'?'sl':'')+'">Laura</button>';
+  h+='<button type="button" data-who="Caixa" class="'+(draftWho==='Caixa'?'sc':'')+'">Caixa</button></div></div>';
+  h+='<div class="field" style="margin-bottom:8px"><label>Observação</label><input id="pNote" placeholder="Sinal, 1ª parcela..."></div>';
+  h+='<button class="btn primary" id="pAdd" style="width:100%;justify-content:center">Lançar pagamento</button></div>';
+  h+='<div class="mact"><button data-close class="btn">Fechar</button><button class="btn danger" id="eDel">Excluir</button></div>';
+  showModal(h);
+  document.getElementById('eSave').addEventListener('click',function(){
+    c.item=document.getElementById('eItem').value.trim()||c.item;
+    c.supplier=document.getElementById('eSupp').value.trim();
+    c.total=pm(document.getElementById('eTotal').value);
+    c.currency=document.getElementById('eCur').value;
+    c.origin=document.getElementById('eOrigin').value;
+    c.status=document.getElementById('eStatus').value;
+    c.notes=document.getElementById('eNotes').value.trim();
+    save();viewDirty=true;openDetail(id);
+  });
+  document.querySelectorAll('#pToggle button').forEach(function(b){
+    b.addEventListener('click',function(){
+      draftWho=b.getAttribute('data-who');
+      document.querySelectorAll('#pToggle button').forEach(function(x){x.className='';});
+      b.className=draftWho==='Noiva'?'sl':draftWho==='Caixa'?'sc':'sn';
+    });
+  });
+  document.getElementById('pAdd').addEventListener('click',function(){
+    var a=pm(document.getElementById('pAmt').value);if(a<=0){document.getElementById('pAmt').focus();return;}
+    if(!c.payments)c.payments=[];
+    c.payments.push({id:uid(),amount:a,currency:document.getElementById('pCur').value,date:document.getElementById('pDate').value||todayISO(),paidBy:draftWho,note:document.getElementById('pNote').value.trim()});
+    save();viewDirty=true;openDetail(id);
+  });
+  document.getElementById('payList').addEventListener('click',function(e){
+    var b=e.target.closest('[data-delpay]');if(!b)return;
+    if(!confirm('Excluir este pagamento?'))return;
+    c.payments=c.payments.filter(function(p){return p.id!==b.getAttribute('data-delpay');});
+    save();viewDirty=true;openDetail(id);
+  });
+  document.getElementById('eDel').addEventListener('click',function(){
+    if(!confirm('Excluir "'+c.item+'"?'))return;
+    state.contracts=state.contracts.filter(function(x){return x.id!==id;});
+    save();viewDirty=true;closeModal();
+  });
+}
+
+function openCaixa(){
+  norm();
+  var cxT=state.caixa.contributions.reduce(function(s,c){return s+(c.amount||0);},0);
+  var h='<div class="mh"><h3>Caixa da família 🐷</h3><button class="x" data-close>&times;</button></div>';
+  h+='<div class="msub">Valores recebidos das famílias. Abatidos do total.</div>';
+  h+='<div class="pay-list" id="cxList">';
+  if(!state.caixa.contributions.length)h+='<div style="font-size:12.5px;color:var(--twd);padding:7px 0">Nenhuma contribuição ainda.</div>';
+  else state.caixa.contributions.forEach(function(cc){
+    h+='<div class="pay-item"><span class="dot dc"></span><div class="pi"><div style="display:flex;align-items:center;gap:5px"><span class="pa">'+fmtBRL(cc.amount)+'</span><span class="pw dc">'+esc(cc.source||'—')+'</span></div>'+(cc.note?'<div class="pm">'+esc(cc.note)+'</div>':'')+'</div><button class="del" data-delcx="'+cc.id+'">&times;</button></div>';
+  });
+  h+='</div>';
+  h+='<div style="display:flex;justify-content:space-between;font-size:13px;font-weight:600;padding:8px 0;border-top:1px solid rgba(255,255,255,.18);margin-top:5px"><span>Total</span><span style="color:#5eead4">'+fmtBRL(cxT)+'</span></div>';
+  h+='<div class="addp" style="margin-top:9px">';
+  h+='<div class="field" style="margin-bottom:8px"><label>Quem contribuiu</label><input id="cxSrc" placeholder="Ex.: Família Silva"></div>';
+  h+='<div class="field" style="margin-bottom:8px"><label>Valor (R$)</label><input id="cxAmt" inputmode="decimal" placeholder="0,00"></div>';
+  h+='<div class="field" style="margin-bottom:8px"><label>Observação</label><input id="cxNote" placeholder="Presente, ajuda..."></div>';
+  h+='<button class="btn primary" id="cxAdd" style="width:100%;justify-content:center">Adicionar ao caixa</button></div>';
+  h+='<div class="mact"><button data-close class="btn">Fechar</button></div>';
+  showModal(h);
+  document.getElementById('cxAdd').addEventListener('click',function(){
+    var a=pm(document.getElementById('cxAmt').value);if(a<=0){document.getElementById('cxAmt').focus();return;}
+    state.caixa.contributions.push({id:uid(),source:document.getElementById('cxSrc').value.trim()||'Contribuição',amount:a,date:todayISO(),note:document.getElementById('cxNote').value.trim()});
+    save();viewDirty=true;openCaixa();
+  });
+  document.getElementById('cxList').addEventListener('click',function(e){
+    var b=e.target.closest('[data-delcx]');if(!b)return;
+    if(!confirm('Remover?'))return;
+    state.caixa.contributions=state.caixa.contributions.filter(function(c){return c.id!==b.getAttribute('data-delcx');});
+    save();viewDirty=true;openCaixa();
+  });
+}
+
+function openGuest(id){
+  var g=id?state.guests.find(function(x){return x.id===id;}):null;
+  var isNew=!g;
+  if(isNew)g={id:uid(),nome:'',categoria:'Outros',prob:'alta',tipo:'convidado',status:'pendente',obs:''};
+  var h='<div class="mh"><h3>'+(isNew?'Novo convidado':esc(g.nome))+'</h3><button class="x" data-close>&times;</button></div>';
+  h+='<div class="field"><label>Nome</label><input id="gNome" value="'+esc(g.nome)+'" placeholder="Nome completo"></div>';
+  h+='<div class="frow"><div class="field"><label>Categoria</label><select id="gCat"><option value="Família Principal"'+(g.categoria==='Família Principal'?' selected':'')+'>Família Principal</option><option value="Família Secundária"'+(g.categoria==='Família Secundária'?' selected':'')+'>Família Secundária</option><option value="Melhores Amigos"'+(g.categoria==='Melhores Amigos'?' selected':'')+'>Melhores Amigos</option><option value="Convivência"'+(g.categoria==='Convivência'?' selected':'')+'>Convivência</option><option value="Outros"'+(g.categoria==='Outros'?' selected':'')+'>Outros</option><option value="Lista Reserva"'+(g.categoria==='Lista Reserva'?' selected':'')+'>Lista Reserva</option></select></div>';
+  h+='<div class="field"><label>Tipo</label><select id="gTipo"><option value="convidado"'+(g.tipo==='convidado'?' selected':'')+'>Convidado</option><option value="reserva"'+(g.tipo==='reserva'?' selected':'')+'>Lista Reserva</option></select></div></div>';
+  h+='<div class="frow"><div class="field"><label>Probabilidade</label><select id="gProb"><option value="certeza"'+(g.prob==='certeza'?' selected':'')+'>Certeza</option><option value="alta"'+(g.prob==='alta'?' selected':'')+'>Alta</option><option value="media"'+(g.prob==='media'?' selected':'')+'>Média</option><option value="baixa"'+(g.prob==='baixa'?' selected':'')+'>Baixa</option></select></div>';
+  h+='<div class="field"><label>Status RSVP</label><select id="gStatus"><option value="pendente"'+(g.status==='pendente'?' selected':'')+'>Pendente</option><option value="confirmado"'+(g.status==='confirmado'?' selected':'')+'>Confirmado ✓</option><option value="nao-vai"'+(g.status==='nao-vai'?' selected':'')+'>Não vai</option></select></div></div>';
+  h+='<div class="field"><label>Observações</label><textarea id="gObs" rows="2" placeholder="Restrições alimentares, acompanhante...">'+esc(g.obs||'')+'</textarea></div>';
+  h+='<div class="mact">';
+  if(!isNew)h+='<button class="btn danger" id="gDel">Excluir</button>';
+  h+='<button data-close class="btn">Cancelar</button><button class="btn primary" id="gSave">Salvar</button></div>';
+  showModal(h);
+  document.getElementById('gSave').addEventListener('click',function(){
+    var nome=document.getElementById('gNome').value.trim();if(!nome){document.getElementById('gNome').focus();return;}
+    g.nome=nome;g.categoria=document.getElementById('gCat').value;g.tipo=document.getElementById('gTipo').value;
+    g.prob=document.getElementById('gProb').value;g.status=document.getElementById('gStatus').value;g.obs=document.getElementById('gObs').value.trim();
+    if(isNew)state.guests.push(g);
+    save();viewDirty=true;closeModal();
+  });
+  if(!isNew){document.getElementById('gDel').addEventListener('click',function(){
+    if(!confirm('Remover "'+g.nome+'"?'))return;
+    state.guests=state.guests.filter(function(x){return x.id!==id;});
+    save();viewDirty=true;closeModal();
+  });}
+}
+
+function loadSugg(){
+  [['Villa / Venue (Lago di Garda)','EUR','italia'],['Catering / Buffet italiano','EUR','italia'],
+   ['Fotografia','EUR','italia'],['Filmagem / Videomaker','EUR','italia'],
+   ['Decoração e Flores','EUR','italia'],['DJ','EUR','italia'],
+   ['Banda','EUR','italia'],['Wedding Planner local','EUR','italia'],
+   ['Vestido de Noiva','BRL','brasil'],['Alianças','BRL','brasil'],
+   ['Traje do Noivo','BRL','brasil'],['Passagens Aéreas','BRL','brasil'],
+   ['Tradutora juramentada','BRL','brasil'],['Convites e Papelaria','BRL','brasil']
+  ].forEach(function(it){state.contracts.push({id:uid(),item:it[0],supplier:'A definir',total:0,currency:it[1],origin:it[2],status:'previsto',notes:'',payments:[]});});
+  save();
+}
+
+// ── INIT ──
+function init(){
+  if(!load()){state={contracts:[],caixa:{contributions:[]},checklist:defCL(),guests:defGuests(),orcamentoMeta:0,grandiaNotas:'',preWedNotas:'',notaQuinta:'',notaSabado:'',notaManha:''};save();}
+  norm();
+  // Tabs
+  document.querySelector('nav.tabs').addEventListener('click',function(e){
+    var b=e.target.closest('[data-view]');if(b){curView=b.getAttribute('data-view');render();}
+  });
+  // Filters
+  document.getElementById('filtersBar').addEventListener('click',function(e){
+    var b=e.target.closest('[data-filter]');
+    if(b){curFlt=b.getAttribute('data-filter');document.querySelectorAll('[data-filter]').forEach(function(x){x.classList.toggle('active',x.getAttribute('data-filter')===curFlt);});renderCC();}
+  });
+  // Topbar
+  document.getElementById('btnBlur').addEventListener('click',function(){blurMoney=!blurMoney;document.body.classList.toggle('blur-money',blurMoney);});
+  // Dashboard delegation
+  document.getElementById('sec-dashboard').addEventListener('click',function(e){
+    if(e.target.id==='btnCaixa')openCaixa();
+    if(e.target.id==='btnGoCC'){curView='cc';render();}
+  });
+  document.getElementById('sec-dashboard').addEventListener('change',function(e){
+    if(e.target.id==='eurIn'){var v=parseFloat(e.target.value.replace(',','.'));if(v>0){eurRate=v;renderDash();}}
+    else if(e.target.id==='orcIn'){
+      var raw=e.target.value.replace(/[R$\s]/g,'').replace(/\./g,'').replace(',','.');
+      var v=parseFloat(raw);if(!isNaN(v)&&v>=0){state.orcamentoMeta=v;save();renderDash();}
+    }
+    else if(e.target.id==='cxIn'){
+      var raw=e.target.value.replace(/[R$\s]/g,'').replace(/\./g,'').replace(',','.');
+      var v=parseFloat(raw);
+      if(!isNaN(v)&&v>=0){
+        var atT=state.caixa.contributions.reduce(function(s,c){return s+(c.amount||0);},0);
+        var diff=v-atT;
+        if(Math.abs(diff)>0.01){state.caixa.contributions.push({id:uid(),source:'Ajuste rápido',amount:diff,date:todayISO(),note:'Editado no painel'});save();renderDash();}
+      }
+    }
+  });
+  // CC delegation — handler limpo, ordem correta (específico→geral)
+  document.getElementById('sec-cc').addEventListener('click',function(e){
+    var t=e.target;
+
+    // 1. Filtros de topo
+    var pf=t.closest('[data-plflt]');
+    if(pf){
+      plFlt=pf.getAttribute('data-plflt');
+      document.querySelectorAll('[data-plflt]').forEach(function(x){x.classList.toggle('active',x.getAttribute('data-plflt')===plFlt);});
+      renderCC();return;
+    }
+
+    // 2. Nova contratação
+    if(t.id==='btnNewContract'){openNew();return;}
+
+    // 3. Salvar contrato inline — ANTES do expand para não conflitar
+    var saveBtn=t.closest('[data-plsave]');
+    if(saveBtn){
+      var iid=saveBtn.getAttribute('data-plsave');
+      var item=state.checklist.find(function(i){return i.id===iid;});
+      if(!item)return;
+      var supp=document.getElementById('pci-supp-'+iid).value.trim();
+      var orig=document.getElementById('pci-orig-'+iid).value;
+      var cur=document.getElementById('pci-cur-'+iid).value;
+      var val=pm(document.getElementById('pci-val-'+iid).value);
+      var st=document.getElementById('pci-st-'+iid).value;
+      var notes=document.getElementById('pci-notes-'+iid).value.trim();
+      if(item.contractId){
+        var contr=state.contracts.find(function(x){return x.id===item.contractId;});
+        if(contr){contr.supplier=supp||'A definir';contr.origin=orig;contr.currency=cur;contr.total=val;contr.status=st;contr.notes=notes;contr.item=item.label;}
+      }else{
+        var nc={id:uid(),item:item.label,supplier:supp||'A definir',total:val,currency:cur,origin:orig,status:st,notes:notes,payments:[]};
+        state.contracts.push(nc);item.contractId=nc.id;
+      }
+      item.fornecedor=supp;save();renderCC();return;
+    }
+
+    // 4. Ver pagamentos
+    var openBtn=t.closest('[data-plopen]');
+    if(openBtn){
+      var iid=openBtn.getAttribute('data-plopen');
+      var item=state.checklist.find(function(i){return i.id===iid;});
+      if(item&&item.contractId)openDetail(item.contractId);
+      return;
+    }
+
+    // 5. Remover contrato
+    var delBtn=t.closest('[data-pldel]');
+    if(delBtn){
+      var iid=delBtn.getAttribute('data-pldel');
+      var item=state.checklist.find(function(i){return i.id===iid;});
+      if(item&&confirm('Remover contrato deste item?')){
+        state.contracts=state.contracts.filter(function(x){return x.id!==item.contractId;});
+        item.contractId=null;item.fornecedor='';expandedId=null;save();renderCC();
+      }return;
+    }
+
+    // 6. Expand/colapsar painel de contrato
+    var expBtn=t.closest('[data-expand]');
+    if(expBtn){
+      var eid=expBtn.getAttribute('data-expand');
+      expandedId=expandedId===eid?null:eid;
+      renderCC();return;
+    }
+
+    // 7. Adicionar tarefa nova na seção
+    var addBtn=t.closest('.cl-add-btn');
+    if(addBtn){
+      var row=addBtn.closest('.cl-add');
+      var secKey=row.getAttribute('data-seckey');
+      var lbl=row.querySelector('.cl-new-lbl').value.trim();
+      var pri=row.querySelector('.cl-new-pri').value;
+      if(!lbl)return;
+      var sec=null;
+      state.checklist.forEach(function(i){
+        if(!sec){try{if(btoa(unescape(encodeURIComponent(i.section))).slice(0,20)===secKey)sec=i.section;}catch(ex){}}
+      });
+      if(!sec)sec='Outros';
+      state.checklist.push({id:uid(),section:sec,label:lbl,done:false,contractId:null,fornecedor:'',priority:pri});
+      save();renderCC();return;
+    }
+
+    // 8. Toggle done — ÚLTIMO, só atinge a linha (não botões)
+    // Se chegou aqui sem ter clicado em nenhum botão acima,
+    // e clicou dentro de uma .pl-row, toggle done
+    var plRow=t.closest('.pl-row');
+    if(plRow){
+      var plItem=plRow.closest('.pl-item[data-plid]');
+      if(plItem){
+        var pid=plItem.getAttribute('data-plid');
+        var found=state.checklist.find(function(i){return i.id===pid;});
+        if(found){found.done=!found.done;save();renderCC();}
+      }return;
+    }
+  });
+  // Convidados delegation
+  document.getElementById('sec-convidados').addEventListener('click',function(e){
+    var gf=e.target.closest('[data-gflt]');
+    if(gf){
+      guestFlt=gf.getAttribute('data-gflt');
+      // Ao trocar filtro de aba, não limpa a busca — permite combinar
+      renderConvidados();return;
+    }
+    if(e.target.id==='btnNewGuest'){openGuest(null);return;}
+    if(e.target.id==='gAdd'){
+      var n=document.getElementById('gNome').value.trim();if(!n)return;
+      var cat=document.getElementById('gCat').value;
+      var tp=cat==='Lista Reserva'?'reserva':'convidado';
+      var prob=document.getElementById('gProb').value;
+      var status=prob==='certeza'?'confirmado':'pendente';
+      state.guests.push({id:uid(),nome:n,categoria:cat,prob:prob,tipo:tp,status:status,obs:''});
+      save();renderConvidados();return;
+    }
+    var gr=e.target.closest('.g-row[data-gid]');if(gr)openGuest(gr.getAttribute('data-gid'));
+  });
+  // Grande Dia delegation
+  document.getElementById('sec-grandia').addEventListener('click',function(e){
+    var gt=e.target.closest('[data-gdtab]');if(gt){gdTab=gt.getAttribute('data-gdtab');renderGrandia();}
+  });
+  // Overlay + ESC
+  document.getElementById('overlay').addEventListener('click',function(e){if(e.target.id==='overlay')closeModal();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+  render();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+else init();
+})();
+</script>
+</body>
+</html>

@@ -322,6 +322,50 @@ body.blur-money .stat3 .sv input{pointer-events:none}
   .g-stats{grid-template-columns:repeat(3,1fr)}
 }
 </style>
+<!-- Firebase SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAfUm9ZbQHrmcdei59hS9suuSc6J9NRBdQ",
+    authDomain: "casamento-laura-e-iago.firebaseapp.com",
+    projectId: "casamento-laura-e-iago",
+    storageBucket: "casamento-laura-e-iago.firebasestorage.app",
+    messagingSenderId: "683627521447",
+    appId: "1:683627521447:web:5207d634266d894d5b4282"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const docRef = doc(db, "casamento", "dados");
+
+  // Expor funções para o script principal
+  window._fbSave = async function(stateObj) {
+    try {
+      await setDoc(docRef, { payload: JSON.stringify(stateObj) });
+    } catch(e) {
+      console.warn("Firebase save error:", e);
+    }
+  };
+
+  window._fbListen = function(callback) {
+    return onSnapshot(docRef, (snap) => {
+      if (snap.exists()) {
+        try {
+          const data = JSON.parse(snap.data().payload);
+          callback(data);
+        } catch(e) {
+          console.warn("Firebase parse error:", e);
+        }
+      }
+    });
+  };
+
+  // Sinalizar que o Firebase está pronto
+  window._fbReady = true;
+  window.dispatchEvent(new Event('fbReady'));
+</script>
 </head>
 <body>
 <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
@@ -347,6 +391,7 @@ body.blur-money .stat3 .sv input{pointer-events:none}
     <button data-filter="previsto">Previstos</button>
   </div>
   <button class="btn sm" id="btnBlur">🙈 Borrar</button>
+  <span id="fbStatus" style="font-size:11px;font-weight:600;padding:5px 10px;border-radius:99px;background:rgba(255,255,255,.15);color:rgba(240,246,255,.6);border:1px solid rgba(255,255,255,.2)">⚡ conectando...</span>
   <button class="btn sm" id="btnExport">📤 Exportar</button>
   <label class="btn sm" id="btnImportLabel" style="cursor:pointer">📥 Importar<input type="file" id="btnImport" accept=".json" style="display:none"></label>
   <button class="btn primary sm" id="btnNew" style="display:none">+ Novo</button>
@@ -358,6 +403,7 @@ body.blur-money .stat3 .sv input{pointer-events:none}
 </div>
 <div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
 <div class="saved-toast" id="saved">Salvo ✓</div>
+<div class="saved-toast" id="syncToast" style="background:rgba(32,96,200,.95);bottom:52px">🔄 Sincronizado</div>
 
 <script>
 (function(){
@@ -384,9 +430,14 @@ function paidOf(c){return(c.payments||[]).reduce(function(s,p){return s+pBRL(p);
 function dueOf(c){return Math.max(0,cBRL(c)-paidOf(c));}
 function isQ(c){return cBRL(c)>0&&paidOf(c)>=cBRL(c)-0.01;}
 
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}showToast();}
-var _tt=null;
+function save(){
+  try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}
+  if(window._fbSave){window._fbSave(state);}
+  showToast();
+}
+var _tt=null,_st=null;
 function showToast(){var el=document.getElementById('saved');if(!el)return;el.classList.add('show');if(_tt)clearTimeout(_tt);_tt=setTimeout(function(){el.classList.remove('show');},1300);}
+function showSyncToast(){var el=document.getElementById('syncToast');if(!el)return;el.classList.add('show');if(_st)clearTimeout(_st);_st=setTimeout(function(){el.classList.remove('show');},2000);}
 function load(){try{var r=localStorage.getItem(KEY);if(r){state=JSON.parse(r);return true;}}catch(e){}return false;}
 function norm(){
   if(!state.contracts)state.contracts=[];
@@ -1289,6 +1340,37 @@ function loadSugg(){
 function init(){
   if(!load()){state={contracts:[],caixa:{contributions:[]},checklist:defCL(),guests:defGuests(),orcamentoMeta:0,grandiaNotas:'',preWedNotas:'',notaQuinta:'',notaSabado:'',notaManha:''};save();}
   norm();
+  // Conectar ao Firebase para sync em tempo real
+  function setupFirebase(){
+    if(!window._fbListen) return;
+    var _ignoreNext=false;
+    window._fbListen(function(remoteState){
+      if(_ignoreNext){_ignoreNext=false;return;}
+      // Só atualiza se os dados remotos forem mais recentes
+      // (usamos o número de contratos+checklist como heurística simples)
+      var remoteSize=(remoteState.contracts||[]).length+(remoteState.checklist||[]).length;
+      var localSize=(state.contracts||[]).length+(state.checklist||[]).length;
+      // Aceita sempre — a última gravação vence
+      state=remoteState;
+      norm();
+      try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}
+      if(!document.getElementById('overlay').classList.contains('open')){
+        render();
+        showSyncToast();
+      }
+    });
+  }
+  function updateFbStatus(ok){
+    var el=document.getElementById('fbStatus');
+    if(!el)return;
+    el.textContent=ok?'🟢 online':'🔴 offline';
+    el.style.color=ok?'rgba(94,234,212,.9)':'rgba(244,114,182,.8)';
+  }
+  if(window._fbReady){setupFirebase();updateFbStatus(true);}
+  else{window.addEventListener('fbReady',function(){setupFirebase();updateFbStatus(true);});}
+  // Detectar offline
+  window.addEventListener('offline',function(){updateFbStatus(false);});
+  window.addEventListener('online',function(){updateFbStatus(true);});
   // Tabs
   document.querySelector('nav.tabs').addEventListener('click',function(e){
     var b=e.target.closest('[data-view]');if(b){curView=b.getAttribute('data-view');render();}
